@@ -1,0 +1,118 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin:0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #000;
+}
+header{
+    background-image: url(../../image/user/usercenter/bg_jrsy@3x.png) !important;
+    background-size: 100% 100% !important;
+}
+header>a>span{
+    color: #fff !important;
+}
+header .aui-col-xs-4{
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+.aui-col-xs-7{
+    padding-top:25px;
+}
+.aui-col-xs-7 div{
+    color:#fff;
+    position: relative;
+}
+.aui-col-xs-7 div p {
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    width: 400%;
+    height: 15px;
+    color:#fff;
+}
+.aui-col-xs-7 div p span{
+    color:#fff;
+}
+.aui-col-xs-5 img{
+    border-radius:50%;
+}
+.leftt{
+    font-size:10px !important;
+    height:1rem;
+    background-color:#f88224;
+    border-radius:15px;
+    margin:45px -80px 0 !important;
+}
+.leftt img{
+    width:20px !important;
+}
+.aui-grid {
+    background-color:rgba(0, 0, 0, 0) !important;
+}
+.aui-grid .aui-grid-label {
+    display: block;
+    position: relative;
+    margin-top: 0 !important;
+    color:#fff;
+}
+.aui-grid [class*=aui-col-] {
+    padding: 1rem 0 0 !important;
+}
+li .aui-grid .aui-grid-label {
+    display: block;
+    position: relative;
+    margin-top: 0 !important;
+    color:gray;
+}
+.aui-list .aui-list-item {
+    background-size: 100% 0px !important;
+    padding:0 0.75rem !important;
+}
+.aui-list {
+    background-size: 100% 0px !important;
+}
+li .aui-grid [class*=aui-col-] {
+    padding:0.5rem 0 0.5rem !important;
+}
+li .aui-grid [class*=aui-col-] div:nth-child(2){
+    margin-top:10px !important;
+}
+.aui-border-t {
+    background-size: 100% 0px !important;
+}
+li .aui-col-xs-6{
+    padding:0 0.75rem 0.75rem 0;
+    position: relative;
+}
+li .aui-col-xs-6>div{
+    position: absolute;
+    top:0px;left:0px;
+    background-color:rgba(0, 0, 0, 0.5);
+    width:92%;
+    height:86%;
+    text-align: center;
+    color:#fff;
+}
+.wenb{
+    font-size:0.85rem;
+    color:#fff;
+    margin-top:0.7rem;
+}
+.ziti{
+    color:#fff;
+    font-size:10px;
+}
+.lognn img{
+    width:15px !important;
+    margin:5px 45%;
+}
+.aui-list-item:nth-child(5){
+    font-size:0.85rem;
+}
+.aui-list-item:nth-child(6){
+    padding-right:0 !important;
+}
+.aui-card-list {
+    margin-bottom: 0rem;
+}

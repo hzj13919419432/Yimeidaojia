@@ -1,0 +1,25 @@
+/*head tab*/
+apiready = function(){
+      api.parseTapmode();
+  }
+//点击导航栏内容跳转到限时特惠页面
+function onTimeSpecial(){
+  api.openWin({
+      name: 'TimeSpecial',
+      url: './timespecial.html'
+  });
+}
+//点击更多品牌跳转到品牌馆页面
+function onBandHall(){
+  api.openWin({
+      name: 'BandHall',
+      url: './bandhall.html'
+  });
+}
+//点击更多跳转到人气推荐
+function onProductRecmd(){
+  api.openWin({
+      name: 'ProductRecmd',
+      url: './productrecmd.html'
+  });
+}

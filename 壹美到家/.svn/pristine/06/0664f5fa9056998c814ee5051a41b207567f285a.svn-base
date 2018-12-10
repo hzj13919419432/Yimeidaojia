@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="../../css/aui.css">
+	<link rel="stylesheet" type="text/css" href="../../css/aui-slide.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public/home.css">
+</head>
+<body class="aui-content">
+	<header>
+		<div class="aui-searchbar" id="search">
+			<span style="font-size:12px;">杭州</span><span style="font-size:9px;">▼</span>
+			<div class="aui-searchbar-input aui-border-radius" tapmode>
+				<i class="aui-iconfont aui-icon-search"></i>
+				<form>
+					<input type="search" placeholder="Dior" id="search-input">
+				</form>
+			</div>
+			<img src="../../image/public/home/icon/ic_message@3x.png" alt="" onclick="onMessAge()">
+		</div>
+	</header>
+	<aside id="head-slide">
+		<div class="aui-slide-wrap" id='banner_div'>
+	    </div>
+	    <div class="aui-slide-page-wrap"></div>
+	</aside>
+	<section>
+		<div class="aui-row row aui-text-center" id='secInd_div'>
+		</div>
+		<div class="aui-row row" id='hdad_div'>
+    </div>
+		<div class="aui-row image-row" id='ztad_div'>
+		</div>
+		<div id="cardList" class="aui-content">
+		</div>
+		<div id="secKill">
+			<div class="skTitle aui-row">
+				爆品秒杀
+			</div>
+			<div id="sktimeLine">
+				<div class="aui-grid" id='secKilltime_div'>
+					<div class="acitevKTime">
+							<span>12:00</span>
+							<div class="aui-grid-label">抢购中</div>
+					</div>
+				</div>
+			</div>
+			<nav style="clear: both;"></nav>
+			<div id="skList">
+				<div class="aui-content aui-margin-b-15">
+			        <ul class="aui-list aui-media-list" id='skProduct_div'>
+			        </ul>
+			    </div>
+			</div>
+		</div>
+	</section>
+</body>
+<script id="hdad_tmpl" type="text/html">
+	 {{each hdad as value}}
+			<img src="{{value.AD_Image}}" alt="">
+ 	 {{/each}}
+</script>
+<script id="ztad_tmpl" type="text/html">
+	 {{each ztad as value}}
+      {{if value.AP_Name=="syzcdt"}}
+			 	<div  class="aui-col-xs-12 banner" onclick="onSpecialProduct({{value.S_Id}});"><img src="{{value.AD_Image}}" /></div>
+			{{ else if value.AP_Name=="syzcxt"}}
+			  <div  class="aui-col-xs-6 sub-banner"  onclick="onSpecialProduct({{value.S_Id}});"><img src="{{value.AD_Image}}" /></div>
+			{{/if}}
+ 	 {{/each}}
+</script>
+<script id="cardList_tmpl" type="text/html">
+	 {{each special as value}}
+	 <div class="aui-card-list">
+			 <div class="aui-card-list-content">
+					 <img src="{{special.SL_Image}}" />
+			 </div>
+			 <div class="aui-card-list-footer">
+				 <div class="roter">
+					 <div>
+						 <span class="shopTitle"><strong>{{value.SL_Title}}</strong></span>
+							 <span class="aui-pull-right">剩{{value.SL_DayCount}}天</span>
+					 </div>
+						 <div class="aui-row">
+							 <span><cite class="aui-font-size-14">{{value.SL_Rebate}}</cite>折起</span>
+						 </div>
+				 </div>
+			 </div>
+	 </div>
+ 	 {{/each}}
+</script>
+<script id="tab_tmpl" type="text/html">
+	 {{each Industry as value}}
+			<div tagstring='{{value.IN_Id}}' class="aui-tab-item">{{value.IN_Name}}</div>
+ 	 {{/each}}
+</script>
+<script id="secInd_tmpl" type="text/html">
+	 {{each secIndustry as value}}
+		 <div class="aui-col-5" onclick="onSecIndu('{{value.IN_Url}}')">
+			 <img class="aui-iconfont" src="{{value.IN_Image}}" alt="">
+			 <p class='label'>{{value.IN_Name}}</p>
+		 </div>
+ 	 {{/each}}
+</script>
+<script id="banner_tmpl" type="text/html">
+	 {{each banner as value}}
+		 <div class="aui-slide-node bg-dark">
+	 			<img src="{{value.AD_Image}}" />
+	 	</div>
+ 	 {{/each}}
+</script>
+<script id="secKilltime_tmpl" type="text/html">
+	 {{each SeckillTime as value}}
+		<div>
+				<span>{{value.ST_Time}}</span>
+				<div class="aui-grid-label">抢购中</div>
+		</div>
+ 	 {{/each}}
+</script>
+<script id="skProduct_tmpl" type="text/html">
+	 {{each skProduct as value}}
+			 <li class="aui-list-item" onclick="onSeckillProduct({{value.P_Id}},{{value.SP_Id}})">
+					 <div class="aui-media-list-item-inner">
+							 <div class="aui-list-item-media">
+									 <img src="{{value.SP_Image}}" />
+							 </div>
+							 <div class="aui-list-item-inner">
+									 <div class="aui-list-item-text">
+											 <div class="aui-list-item-title">
+												 {{value.P_Name}}
+										 </div>
+									 </div>
+									 <div class="aui-list-item-text buy-progress">
+											 <div>
+												 <span class="aui-progress-bar aui-progress-xs full-progress" style=""></span>
+												 <span class="aui-progress-bar aui-progress-xs now-progress" style=""></span>
+												 即将售罄
+											 </div>
+									 </div>
+									 <div class="aui-info aui-margin-t-10">
+										 <div class="aui-info-item">
+												 <span class="now-price">￥{{value.SP_Price}}</span><span class="old-price">￥{{value.P_Price}}</span>
+										 </div>
+										 <div class="aui-info-item">
+					 							<input type="button" class="aui-btn aui-btn-default toBuy" value="马上抢">
+										 </div>
+								 </div>
+							 </div>
+					 </div>
+			 </li>
+ 	 {{/each}}
+</script>
+<script type="text/javascript" src="../../script/api.js" ></script>
+<script type="text/javascript" src="../../script/jquery.min.js"></script>
+<script type="text/javascript" src="../../script/aui-tab.js" ></script>
+<script type="text/javascript" src="../../script/aui-slide.js"></script>
+<script type="text/javascript" src="../../script/template-web.js"></script>
+<script type="text/javascript" src="../../promise/promise.js"></script>
+<script type="text/javascript" src="../../script/public/home.js"></script>
+</html>

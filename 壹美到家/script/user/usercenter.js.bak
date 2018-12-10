@@ -1,0 +1,94 @@
+apiready = function(){
+  api.parseTapmode();
+  init();
+};
+
+function init(){
+  loadUserInfo();
+  listenReload();
+  bindAcc();
+}
+function listenReload(){
+  api.addEventListener({
+      name: 'reloadUsercenter'
+  }, function(ret, err){
+      if( ret ){
+           init();
+      }
+  });
+  api.addEventListener({
+      name: 'reloadUserInfo'
+  }, function(ret, err){
+      if( ret ){
+           init();
+      }
+  });
+
+}
+function loadUserInfo(){
+  var uid=$api.getStorage('userid');
+  var result=get_userinfo({uid:uid});
+  result.then(function(res){
+    if(res.status==200){
+      //console.log(JSON.stringify(res));
+      var nickname = res.info.CU_Nickname;
+      var img = res.info.CU_Photo;
+      var ucode = res.info.U_Code;
+      if(nickname!=null && $.trim(nickname).length>0){
+        $($('.nickname')[0]).text(nickname);
+      }
+      if(img!=null && $.trim(img).length>0){
+        $($('.my-img')[0]).text(img);
+      }
+      if(ucode !=null && $.trim(ucode).length>0){
+        $('#spanUCode').text(ucode);
+      }
+
+    }
+  });
+}
+function bindAcc(){
+  var uid=$api.getStorage('userid');
+  var result=get_userprofit({uid:uid});
+  result.then(function(res){
+    console.log(JSON.stringify(res));
+    if(res.status==200){
+      var html=template('profit_tmpl',{profit:res.info})
+      $('#profit_div').html(html);
+    }
+   });
+}
+//打开我的邀请码页面
+function fnOpenDistsaleWin(){
+  api.openWin({
+      name: 'distsale',
+      url: './distsale.html'
+  });
+
+}
+//打开客户管理页面
+function fnOpenCustomerlWin(){
+  api.openWin({
+      name: 'customer',
+      url: '../user/customer.html'
+  });
+}
+//打开提现页面
+function fnOpenWithdrawlWin() {
+  api.openWin({
+      name: 'withdraw',
+      url: '../useracc/withdraw.html'
+  });
+}
+//打开关于我们页面
+function fnOpenAboutusWin() {
+  api.openWin({
+      name: 'aboutus',
+      url: '../public/aboutus.html'
+  });
+}
+function takePhone() {
+    api.call({
+        number:'029-83670111'
+    });
+};

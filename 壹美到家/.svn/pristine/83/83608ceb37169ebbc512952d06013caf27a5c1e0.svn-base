@@ -1,0 +1,20 @@
+apiready = function () {
+  init();
+}
+function init() {
+  api.parseTapmode();
+  fixHeader();
+  // inittab();
+}
+function fixHeader() {
+  var header = document.querySelector('body>header');
+  $api.fixStatusBar(header);
+}
+function inittab() {
+  var tab = new auiTab({
+        element:document.getElementById("tab"),
+        index:1,
+        repeatClick:false
+    },function(ret){
+    });
+}

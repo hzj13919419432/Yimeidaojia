@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin:0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    color: #000;
+}
+body{
+    background-color: #fff;
+}
+header{
+    position:fixed !important;
+    top:0;  
+}
+.aui-bar-nav {
+    top: 0;
+    line-height: 2.25rem;
+    background-color:rgba(255,255,255,0);
+    color: #ffffff;
+}
+header div.bjzp a{
+    margin-top: 20px !important;
+}
+header div.bjzp a span{
+    color: #fff !important;
+}
+div.imag{
+    position: relative;
+}
+header div.login{
+    position: absolute;
+    top:-15px;
+    left:4%;
+}
+.login{
+    box-shadow: 5px 5px 5px #888888;
+}
+div.home{
+    padding-left: 29.5%;
+}
+.home div h1{
+    font-size: 1rem !important;
+}
+div.home>div.aui-col-xs-4{
+    padding:15px 10px;
+    color: gray !important;
+}
+.aui-bar-nav .aui-btn.aui-btn-outlined{
+    margin: 0px !important;
+    line-height: 1rem !important;
+}
+.aui-card-list {
+    margin: 0 !important;
+}
+.aui-btn{
+    border-radius:0rem;
+    line-height: 1.6rem !important;
+}
+.aui-btn-block.aui-btn-sm {
+    line-height: 1.6rem !important;
+    height: 1.5rem;
+    color: gray !important;
+}
+div.home p{
+    margin-left:0; 
+}
+h1{
+    color: black !important;
+}
+div.ent{
+    width:100%;   
+}
+div.ent span{
+    background-color: black !important;
+    padding:0 5px;
+    color: #fff;
+    font-size: 0.6rem !important;
+}
+.aui-col-xs-8 span{
+    color:gray;
+    font-size:0.7rem; 
+}
+div.kefu{
+    margin-left:15px; 
+    padding-top:5px; 
+}
+div.kefu .aui-col-xs-2{
+    width:5%;
+    margin-right:10px; 
+}
+.aui-margin-b-15 div.aui-list{
+    padding:0 1rem;
+    color:gray;
+    font-size:14px; 
+    width:100%;
+    height:40px;
+}
+div.padded{
+    color:gray; 
+    padding:10px 15px;
+    font-size:14px;
+}
+div.aui-margin-b-15{
+    margin-top: 15px;
+    color:#000;
+}
+div.aui-margin-b-15 h1{  
+    font-size:0.8rem;
+    text-align: center;
+    float: left;
+    margin-top:9px;
+}
+div.aui-margin-b-15 div.aui-list p{
+    text-align: center;
+    margin-top:10px;
+    color: #000 !important;
+    float:right;
+}
+p {
+    font-size: 0.65rem !important;
+}
+
+ul li{
+    border-bottom:1px solid #ececec !important;
+}
+ul li .aui-list-item-text{
+    color: #000 !important;
+    font-size: 0.65rem !important; 
+}
+.aui-list-item-text:nth-child(2){
+    margin-top:1.4rem; 
+}
+ul li img{
+    border-radius:0px !important; 
+}
+
+.aui-list-item-inner.aui-list-item-arrow {
+    padding-right: 1rem !important;
+}
+.aui-list-item-title.aui-font-size-16 b{
+    color: red;
+}

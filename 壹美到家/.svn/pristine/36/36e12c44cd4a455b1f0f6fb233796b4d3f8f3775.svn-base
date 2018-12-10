@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>热门详情</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/aui.css">
+     <link rel="stylesheet" href="../../css/bussschool/hotdetail.css">
+    <style></style>
+</head>
+<body>
+
+
+    <header class="aui-bar aui-bar-nav aui-bar-light classhead">
+      <a class="aui-pull-left aui-btn">
+          <span class="aui-iconfont aui-icon-left"></span>
+      </a>
+      <a class="aui-pull-right ">
+          <i class="aui-iconfont aui-icon-share"></i>
+      </a>
+  </header>
+  <div class="headbg">
+       <img src="../../image/bussschool/bussschool/5bfb4a1aN3fbb19b5.jpg" alt="">
+   </div>
+
+   <main>
+
+      <div>
+        <h3>今年最火的Rapper，应该非Travis Scott 莫属？</h3>
+        <p>如果你有看过那部在镜头前“CoolCoacine”,由Noise有制作的嘻哈记录片。  如果你有看过那部在镜头前“CoolCoacine”,由Noise有制作的嘻哈记录片。</p>
+        <p>如果你有看过那部在镜头前“CoolCoacine”,由Noise有制作的嘻哈记录片。如果你有看过那部在镜头前“CoolCoacine”，由Noise有制作的嘻哈记录片。</p>
+        <p>如果你有看过那部在镜头前“CoolCoacine”,由Noise有制作的嘻哈记录片。  如果你有看过那部在镜头前“CoolCoacine”,由Noise有制作的嘻哈记录片。</p>
+        <p>如果你有看过那部在镜头前“CoolCoacine”,由Noise有制作的嘻哈记录片。如果你有看过那部在镜头前“CoolCoacine”，由Noise有制作的嘻哈记录片。</p>
+
+
+      </div>
+
+
+
+
+   </main>
+
+
+
+
+
+</body>
+
+
+</html>

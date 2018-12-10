@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="../../css/aui.css">
+	<link rel="stylesheet" type="text/css" href="../../css/aui-slide.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public/home.css">
+	<style>
+
+	</style>
+</head>
+<body class="aui-content">
+	<header class="aui-bar aui-bar-nav">
+		<a class="aui-pull-left aui-btn">
+			<span class="aui-iconfont">杭州▼</span>
+		</a>
+		<div class="aui-title" onclick="onSearch()">
+			<div class="aui-searchbar" id="search">
+				<div class="aui-searchbar-input aui-border-radius" tapmode>
+					<i class="aui-iconfont aui-icon-search"></i>
+					<form action="javascript:search();">
+						<input type="search" placeholder="Dior" id="search-input">
+					</form>
+				</div>
+			</div>
+		</div>
+		<a class="aui-pull-right aui-btn" onclick="onMessAge()">
+			<img src="../../image/public/home/remind.png" alt="">
+		</a>
+		<a class="aui-pull-right aui-btn">
+			<img src="../../image/public/home/QRcode.png" alt="">
+		</a>
+	</header>
+	<div class="aui-content">
+
+		<!--轮播图--->
+		<div id="aui-slide3">
+			<div class="aui-slide-wrap" >
+				<div class="aui-slide-node bg-dark">
+					<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+				</div>
+				<div class="aui-slide-node bg-dark">
+					<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+				</div>
+				<div class="aui-slide-node bg-dark">
+					<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+				</div>
+			</div>
+			<div class="aui-slide-page-wrap"><!--分页容器--></div>
+		</div>
+
+		<!--导航栏-->
+		<secton class="aui-grid">
+			<div class="row aui-text-center">
+				<div class="aui-col-xs-3 home" onclick="onSpecialDr()">
+					<div class="aui-row">成为达人</div>
+					<p>Orator</p>
+					<div class="homes"></div>
+				</div>
+				<div class="aui-col-xs-3 home" tapmode onclick="onEMcollege()">
+					<div class="aui-row">壹教育</div>
+					<p>EMcollege</p>
+					<div class="homes"></div>
+				</div>
+				<div class="aui-col-xs-3 home" tapmode onclick="onTimeSpecial()">
+					<div class="aui-row">限时特惠</div>
+					<p>Discount</p>
+					<div class="homes"></div>
+				</div>
+				<div class="aui-col-xs-3 home" tapmode onclick="toAround()">
+					<div class="aui-row">附近体验店</div>
+					<p>Showroom</p>
+				</div>
+
+				<div class="aui-col-xs-3 home" tapmode onclick="onTimeSpecial()">
+					<div class="aui-row">网易精选</div>
+					<p>NetEase</p>
+					<div class="homes"></div>
+				</div>
+				<div class="aui-col-xs-3 home" tapmode onclick="onTimeSpecial()">
+					<div class="aui-row">天猫精选</div>
+					<p>TMall.com</p>
+					<div class="homes"></div>
+				</div>
+				<div class="aui-col-xs-3 home" tapmode onclick="onTimeSpecial()">
+					<div class="aui-row">京东精选</div>
+					<p>JD.com</p>
+					<div class="homes"></div>
+				</div>
+				<div class="aui-col-xs-3 home" tapmode onclick="onTimeSpecial()">
+					<div class="aui-row">美博会</div>
+					<p>CIBE</p>
+				</div>
+			</div>
+		</secton>
+		<!--热门资讯-->
+		<section class="hotnews">
+			<div class="aui-card-list">
+				<div class="aui-card-list-header">
+					<div class="aui-list-item-inner tits">
+						<div class="aui-list-item-title">热门资讯
+							<span tapmode onclick="toHotarticle()">资讯频道 ></span>
+						</div>
+						<div class="aui-list-item-text">
+							HOT NEWS
+						</div>
+					</div>
+				</div>
+				<div class="aui-card-list-content">
+					<ul class="aui-list aui-media-list move" >
+						<img src="../../image/public/home/zixun_bg.png" alt="">
+						<li class="aui-list-item aui-list-item-middle" id="bodys">
+							<div class="aui-media-list-item-inner">
+								<div class="aui-list-item-media">
+									<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" class="aui-list-img-sm">
+								</div>
+								<div class="aui-list-item-inner">
+									<div class="aui-list-item-text">
+										美妆大奖商品一迪奥小姐 花漾淡香水 获奖 名单公布
+									</div>
+									<div class="aui-list-item-text">
+										香水/潮流
+									</div>
+									<div class="aui-list-item-text">
+										<div class="aui-list-item-title aui-font-size-12">
+											刚刚
+										</div>
+										<div class="aui-list-item-right">
+											<img src="../../image/public/home/yuedu_2x.png" alt="">
+										</div>
+										<div><a>27538</a></div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="aui-list-item aui-list-item-middle" id="bodys">
+							<div class="aui-media-list-item-inner">
+								<div class="aui-list-item-media">
+									<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" class="aui-list-img-sm">
+								</div>
+								<div class="aui-list-item-inner">
+									<div class="aui-list-item-text">
+										美妆大奖商品一迪奥小姐 花漾淡香水 获奖 名单公布
+									</div>
+									<div class="aui-list-item-text">
+										香水/潮流
+									</div>
+									<div class="aui-list-item-text">
+										<div class="aui-list-item-title aui-font-size-12">
+											刚刚
+										</div>
+										<div class="aui-list-item-right">
+											<img src="../../image/public/home/yuedu_2x.png" alt="">
+										</div>
+										<div><a>27538</a></div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<img src="../../image/public/home/47c3bd688a208a79b5c91a093a20993.png" alt="">
+		</section>
+		<!--人气推荐-->
+		<div class="rqtj">
+			<div class="aui-card-list">
+				<div class="aui-card-list-header">
+					<div class="aui-list-item-inner tits">
+						<div class="aui-list-item-title">人气推荐
+							<span onclick="onProductRecmd()">更多 ></span>
+						</div>
+						<div class="aui-list-item-text">
+							RECOMMENDATIONS
+						</div>
+					</div>
+				</div>
+				<div class="aui-card-list-content-padded">
+					<div class="aui-row aui-row-padded">
+						<div class="aui-col-xs-4 texts">
+							<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+							<div>
+								<p>￥125.00<a>1299.00</a></p>
+								<div>香奈儿护手霜（滋润）</div>
+								<div class="imag">
+									<img src="../../image/public/home/Brandstore.png" alt="">
+									<div>CHANEL</div>
+								</div>
+							</div>
+						</div>
+						<div class="aui-col-xs-4 texts">
+							<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+							<div>
+								<p>￥125.00<a>1299.00</a></p>
+								<div>香奈儿护手霜（滋润）</div>
+								<div class="imag">
+									<img src="../../image/public/home/Brandstore.png" alt="">
+									<div>CHANEL</div>
+								</div>
+							</div>
+						</div>
+						<div class="aui-col-xs-4 texts">
+							<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+							<div>
+								<p>￥125.00<a>1299.00</a></p>
+								<div>香奈儿护手霜（滋润）</div>
+								<div class="imag">
+									<img src="../../image/public/home/Brandstore.png" alt="">
+									<div>CHANEL</div>
+								</div>
+							</div>
+						</div>
+						<div class="aui-col-xs-4 texts">
+							<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+							<div>
+								<p>￥125.00<a>1299.00</a></p>
+								<div>香奈儿护手霜（滋润）</div>
+								<div class="imag">
+									<img src="../../image/public/home/Brandstore.png" alt="">
+									<div>CHANEL</div>
+								</div>
+							</div>
+						</div>
+						<div class="aui-col-xs-4 texts">
+							<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+							<div>
+								<p>￥125.00<a>1299.00</a></p>
+								<div>香奈儿护手霜（滋润）</div>
+								<div class="imag">
+									<img src="../../image/public/home/Brandstore.png" alt="">
+									<div>CHANEL</div>
+								</div>
+							</div>
+						</div>
+						<div class="aui-col-xs-4 texts">
+							<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+							<div>
+								<p>￥125.00<a>1299.00</a></p>
+								<div>香奈儿护手霜（滋润）</div>
+								<div class="imag">
+									<img src="../../image/public/home/Brandstore.png" alt="">
+									<div>CHANEL</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--热门品牌-->
+		<div class="aui-card-list">
+			<div class="aui-card-list-header">
+				<div class="aui-list-item-inner tits">
+					<div class="aui-list-item-title">热门品牌
+						<span onclick="onBandHall()">更多品牌 ></span>
+					</div>
+					<div class="aui-list-item-text">
+						HOT BRAND
+					</div>
+				</div>
+			</div>
+			<div>
+				<div id="aui-slide">
+					<div class="aui-slide-wrap" >
+						<div class="aui-slide-node bg-dark">
+							<img src="../../image/public/home/3.png" />
+							<div class="images">
+								<img src="../../image/public/home/Brandstore.png" alt="">
+								<div>YSL</div>
+							</div>
+							<div class="aui-row ysl">
+								<div class="aui-col-xs-4">
+									<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" alt="">
+									<div>￥125.00 <i>398.00</i></div>
+									<div>YSL</div>
+								</div>
+								<div class="aui-col-xs-4">
+									<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" alt="">
+									<div>￥125.00 <i>398.00</i></div>
+									<div>YSL</div>
+								</div>
+								<div class="aui-col-xs-4">
+									<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" alt="">
+									<div>￥125.00 <i>398.00</i></div>
+									<div>YSL</div>
+								</div>
+							</div>
+						</div>
+						<div class="aui-slide-node bg-dark">
+							<img src="../../image/public/home/3.png" />
+							<div class="images">
+								<img src="../../image/public/home/Brandstore.png" alt="">
+								<div>YSL</div>
+							</div>
+							<div class="aui-row ysl">
+								<div class="aui-col-xs-4">
+									<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" alt="">
+									<div>￥125.00 <i>398.00</i></div>
+									<div>YSL</div>
+								</div>
+								<div class="aui-col-xs-4">
+									<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" alt="">
+									<div>￥125.00 <i>398.00</i></div>
+									<div>YSL</div>
+								</div>
+								<div class="aui-col-xs-4">
+									<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" alt="">
+									<div>￥125.00 <i>398.00</i></div>
+									<div>YSL</div>
+								</div>
+							</div>
+						</div>
+						<div class="aui-slide-node bg-dark">
+							<img src="../../image/public/home/3.png" />
+							<div class="images">
+								<img src="../../image/public/home/Brandstore.png" alt="">
+								<div>YSL</div>
+							</div>
+							<div class="aui-row ysl">
+								<div class="aui-col-xs-4">
+									<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" alt="">
+									<div>￥125.00 <i>398.00</i></div>
+									<div>YSL</div>
+								</div>
+								<div class="aui-col-xs-4">
+									<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" alt="">
+									<div>￥125.00 <i>398.00</i></div>
+									<div>YSL</div>
+								</div>
+								<div class="aui-col-xs-4">
+									<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" alt="">
+									<div>￥125.00 <i>398.00</i></div>
+									<div>YSL</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="aui-slide-page-wrap"><!--分页容器--></div>
+				</div>
+			</div>
+		</div>
+		<!--猜你喜欢-->
+		<div class="aui-card-list cnxh">
+			<div class="aui-card-list">
+				- 猜你喜欢 -
+			</div>
+			<div class="aui-row">
+				<div class="aui-col-xs-6">
+					<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+					<div>￥125.00<a href="">259.00</a></div>
+					<div>YSL</div>
+					<div>黑金诱惑节日限量奥飘茗香水</div>
+				</div>
+				<div class="aui-col-xs-6">
+					<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+					<div>￥125.00<a href="">259.00</a></div>
+					<div>YSL</div>
+					<div>黑金诱惑节日限量奥飘茗香水</div>
+				</div>
+				<div class="aui-col-xs-6">
+					<img src="../../image/public/home/5b3f4460N14aab4fb.jpg" />
+					<div>￥125.00<a href="">259.00</a></div>
+					<div>YSL</div>
+					<div>黑金诱惑节日限量奥飘茗香水</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+<script type="text/javascript" src="../../script/api.js" ></script>
+<script type="text/javascript" src="../../script/jquery.min.js"></script>
+<script type="text/javascript" src="../../script/aui-tab.js" ></script>
+<script type="text/javascript" src="../../script/aui-slide.js"></script>
+<script type="text/javascript" src="../../script/template-web.js"></script>
+<script type="text/javascript" src="../../promise/promise.js"></script>
+<script type="text/javascript" src="../../script/public/home.js"></script>
+<script type="text/javascript">
+    var slide = new auiSlide({
+        container:document.getElementById("aui-slide"),
+        // "width":300,
+        "height":375,
+        "speed":300,
+        "pageShow":true,
+        "pageStyle":'dot',
+        "loop":true,
+        'dotPosition':'center',
+        currentPage:currentFun
+    })
+
+    function currentFun(index) {
+      /*  console.log(index); */
+	}
+	var slide3 = new auiSlide({
+		container:document.getElementById("aui-slide3"),
+		// "width":300,
+		"height":240,
+		"speed":500,
+		"autoPlay": 3000, //自动播放
+		"loop":true,
+		"pageShow":true,
+		"pageStyle":'line',
+		'dotPosition':'center'
+	})
+	/*console.log(slide3.pageCount()); */
+
+</script>
+</html>

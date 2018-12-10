@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>发布内容</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/aui.css">
+     <link rel="stylesheet" href="../../css/yischool/activity.css">
+    <style></style>
+</head>
+<body>
+  <header class="aui-bar aui-bar-nav head">
+    <a class="aui-pull-left aui-btn back">
+        <span class="aui-iconfont aui-icon-left"></span>
+    </a>
+    <div class="aui-tab" id="tab">
+        <div class="aui-tab-item ">课堂</div>
+        <div class="aui-tab-item aui-active">活动</div>
+    </div>
+</header>
+<main>
+  <div class="activelist">
+    <ul>
+      <li>
+        <div class="tpic">
+          <img src="../../image/yishow/hotarticledetail/u=1808031275,4113292716&fm=26&gp=0.jpg" alt="">
+        </div>
+
+         <div class="title">
+             <h3>
+               <span class="left">线下活动</span>
+               <span>华东五城巡回</span>
+             </h3>
+             <p>哲学与东方领导智慧</p>
+             <div  class="join">立即报名</div>
+         </div>
+      </li>
+      <li>
+        <div class="tpic">
+          <img src="../../image/yishow/hotarticledetail/u=1808031275,4113292716&fm=26&gp=0.jpg" alt="">
+        </div>
+
+         <div class="title">
+             <h3>
+               <span class="left">线下活动</span>
+               <span>华东五城巡回</span>
+             </h3>
+             <p>哲学与东方领导智慧</p>
+             <div  class="join">立即报名</div>
+         </div>
+      </li>
+      <li>
+        <div class="tpic">
+          <img src="../../image/yishow/hotarticledetail/u=1808031275,4113292716&fm=26&gp=0.jpg" alt="">
+        </div>
+
+         <div class="title">
+             <h3>
+               <span class="left">线下活动</span>
+               <span>华东五城巡回</span>
+             </h3>
+             <p>哲学与东方领导智慧</p>
+             <div  class="join">立即报名</div>
+         </div>
+      </li>
+    
+    </ul>
+  </div>
+</main>
+<script type="text/javascript" src="../../script/api.js"></script>
+<script type="text/javascript" src="../../script/jquery.min.js"></script>
+<script type="text/javascript" src="../../promise/promise.js"></script>
+<script type="text/javascript" src="../../script/yischool/activity.js"></script>
+</body>
+</html>

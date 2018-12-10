@@ -1,0 +1,112 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin:0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color:#000;
+    font-size:14px ;
+}
+header{
+    background:rgba(225, 225, 225, 0) !important;
+    position: fixed !important;
+    top:0;
+}
+header>a>span{
+    color: #fff !important;
+}
+header>div{
+    color: #fff !important;
+}
+input::-webkit-input-placeholder{
+    color:gray;
+}
+.aui-list .aui-list-item {
+    border: none;
+    background-size: 100% 0.5px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: linear-gradient(0,#dddddd,#dddddd 0%,transparent 0%);
+    background-image: -webkit-linear-gradient(90deg,#dddddd,#dddddd 0%,transparent 0%);
+}
+div.aui-content div.checkbx{
+    width:100%;
+    height:2rem;
+    line-height:3rem;
+}
+div.btn{
+    padding-top: 0.4rem;
+    padding-right:1.5rem;
+}
+div.aui-btn{
+    border-radius: 0rem;
+}
+div.aui-content div.checkbx>input{
+    margin-left:4rem
+}
+div.aui-content>div.api{
+    margin-left:10%;
+    margin-right: 10%;
+}
+div.api p{
+    margin-bottom: 20px;
+}
+form{
+  background-color:#fff ;
+}
+form > img{
+    width:100%;
+}
+input::-webkit-input-placeholder{
+    font-size: 12px;
+}
+.aui-btn-block {
+    display: block;
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.info{
+    color: #fff !important;
+    background-color: #c08444!important;
+}
+ul li.aui-list-item{
+    padding:0 15% !important;
+    margin-top:15px !important; 
+}
+li>div{
+    border-bottom:1px solid #bdbdbd;
+    padding:0 5px !important;  
+}
+.aui-list .aui-list-item-label{
+    width:155px;
+    line-height:1.5rem;
+    background-color: #a99076d9;
+    padding:0 0.5rem !important;
+}
+.aui-list .aui-list-item-label-icon {
+    line-height:2rem;
+}
+input{
+    height:2rem;
+    color:#c08444 !important;
+    font-size:14px !important; 
+}
+div.aui-content div.checkbx>input {
+    margin-left: 4rem;
+    height:13px !important;
+}
+.aui-btn{
+    border-radius:30px !important; 
+}
+.aui-list {
+    background-size: 100% 0px !important;
+}
+.aui-list-item-label-icon img{
+    width:16px;
+}
+.aui-content-padded {
+    margin: 1.75rem;
+}

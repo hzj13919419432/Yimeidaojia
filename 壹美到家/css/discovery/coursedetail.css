@@ -1,0 +1,47 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin:0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    color: gray;   
+}
+body{
+    background-color: #fff;
+}
+.aui-card-list-user-name div{
+    color:#000;
+    font-size:0.75rem; 
+}
+small{
+    margin-right:10px;
+}
+small i{
+    margin-left:20px; 
+    color:red;
+}
+.aui-card-list-user-avatar {
+    width: 2.3rem !important;
+}
+.code{
+    margin:0 10px; 
+}
+.code div{
+    width:100%;
+}
+.code div{
+    font-size:0.75rem; 
+}
+.aui-padded-10{
+    padding-bottom:0 !important; 
+}
+.zero{
+    color: #000;
+    margin-right:10px; 
+}
+.photo,ul{
+    background-color: #ececec !important;
+}
+ul li img{
+    margin-left:5px;
+}

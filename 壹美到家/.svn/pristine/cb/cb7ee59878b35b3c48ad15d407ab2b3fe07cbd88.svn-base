@@ -1,0 +1,221 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin:0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    color: #000;
+    font-size: 12px;
+}
+header{
+  width: 100%;
+  height: 230px !important;
+  background-color: #000 !important;
+}
+header aside{
+  margin-top: 20px;
+}
+header .left-icon-c,header .right-icon-c{
+  margin-left: 30px !important;
+  margin-right: 30px !important;
+  width: 28px;
+  height: 28px;
+  overflow: hidden;
+}
+header .left-icon-c img,header .right-icon-c img{
+  width: 100%;
+  height: 100%;
+}
+section{
+  background-color: #fff;
+  width: 100%;
+}
+section .section-top{
+  width: 88%;
+  height: 200px;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+  top:-100px;
+  z-index: 999;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  border-right: 0;
+  box-shadow: 0 2px 6px #ccc;
+}
+section .section-top .top,section .section-top .bottom{
+  height: 50%;
+}
+section .section-top .top{
+  overflow: hidden;
+  padding-top: 15px;
+}
+section .section-top .top .one{
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 20px;
+  float: left;
+}
+section .section-top .top .one img{
+  width: 100%;
+  height: 100%;
+}
+section .section-top .top .two{
+  width: 120px;
+  height: 64px;
+  border-radius: 50%;
+  margin-left: 15px;
+  float: left;
+}
+section .section-top .top .two .nickname{
+  color: #525252;
+  font-size: 14px;
+}
+
+section .section-top .top .two .dr_logo{
+  height: 24px;
+  width: 90px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #666666;
+  line-height: 24px;
+}
+.dr_logo_img_box{
+  background-color: #000;
+  display: inline-block;
+  width: 40px;
+  height: 100%;
+}
+section .section-top .top .two .dr_logo img{
+  width: 60%;
+  height: 80%;
+  margin: 0 20%;
+}
+section .section-top .top .two .dr_logo .dr_val{
+  display: inline-block;
+  width: 40px;
+  position: relative;
+  top:-3px;
+  color: #DADADA;
+  text-align: center;
+}
+section .section-top .top  .three{
+  width: 100px;
+  height: 35px;
+  float: right;
+  position: relative;
+  right: -40px;
+  top:10px;
+  background-color: #000;
+  color: #fff;
+  line-height: 35px;
+  padding-left: 15px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+section .section-top .bottom{
+  position: relative;
+  top:20px;
+}
+section .section-top .bottom .menu{
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+section .section-top .bottom .menu-item-icon{
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  overflow: hidden;
+  position: relative;
+}
+section .section-top .bottom .menu-item-icon img{
+  width: 100%;
+  height: 100%;
+}
+section .section-top .bottom .menu-item-val{
+  color: #656565;
+}
+.my-assets{
+  width: 96%;
+  margin: 0 auto;
+  position: relative;
+  top:-60px;
+  padding: 0 2%;
+}
+.my-assets .my-assets-title{
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.my-assets .my-assets-box{
+  height: 65px;
+  margin-bottom: 20px;
+}
+.my-assets .my-assets-box>div{
+  float: left;
+  width: 47%;
+  border-radius: 10px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 1px 1px 1px 3px #F8F8F8;
+  padding-left: 6px;
+  overflow: hidden;
+}
+
+.to-assets,.all-assets{
+  margin-right: 3%;
+  margin-left: 1%;
+}
+.my-assets .my-assets-box>div .title{
+  float: left;
+  font-size: 14px;
+  color: #565656;
+}
+.my-assets .my-assets-box>div .val{
+  color: #AAAAAA;
+  float: right;
+  position: relative;
+  top:3px;
+  right: 8px;
+}
+.my-tools{
+  width: 96%;
+  margin: 0 auto;
+  height: 150px;
+  position: relative;
+  top:-50px;
+  padding: 0 2%;
+}
+.my-tools .my-tools-title{
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+.my-tools-menu{
+  width: 100%;
+}
+.my-tools-menu .menu-item{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.my-tools-menu .menu-item .menu-item-icon{
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.my-tools-menu .menu-item .menu-item-icon img{
+  width: 100%;
+  height: 100%;
+}
+.my-tools-menu .menu-item .menu-item-val{
+  color: #848484;
+}

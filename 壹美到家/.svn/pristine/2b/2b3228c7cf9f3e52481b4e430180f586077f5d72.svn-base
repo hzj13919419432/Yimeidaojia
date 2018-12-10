@@ -1,0 +1,20 @@
+apiready = function () {
+  init();
+}
+function init() {
+  api.parseTapmode();
+  fixHeaderbar();
+}
+function fixHeaderbar() {
+  var header = document.querySelector('body>header');
+  $api.fixStatusBar(header);
+}
+function toYishow() {
+  api.openWin({
+      name: 'topic',
+      url: '../../html/yishow/topic.html',
+      pageParam: {
+          name: 'topic'
+      }
+  });
+}

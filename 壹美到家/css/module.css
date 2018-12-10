@@ -1,0 +1,69 @@
+/*
+* @Author: Dell
+* @Date:   2018-05-03 15:32:02
+* @Last Modified by:   Dell
+* @Last Modified time: 2018-05-03 15:38:02
+*/
+
+
+// 星级评分
+
+.star_bg {
+	display: inline-block;
+    width: 130px; height: 25px;
+    background: url(../../image/qietu/graystars.png) repeat-x;
+    position: relative;
+    overflow: hidden;
+    a{
+		border:none;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-tap-highlight-color:transparent;
+		outline:none;
+	}
+}
+.star {
+    height: 100%; width: 26px;
+    line-height: 6em;
+    position: absolute;
+    z-index: 3;
+}
+.star:hover {    
+    background: url(../../image/qietu/bluestars.png) repeat-x 0 0px!important;
+    left: 0; z-index: 2;
+}
+.star_1 { left: 0; }
+.star_2 { left: 26px; }
+.star_3 { left: 52px; }
+.star_4 { left: 78px; }
+.star_5 { left: 104px; }
+.star_1:hover { width: 26px; }
+.star_2:hover { width: 52px; }
+.star_3:hover { width: 78px; }
+.star_4:hover { width: 104px; }
+.star_5:hover { width: 130px; }
+
+label { 
+    display: block; _display:inline;
+    height: 100%; width: 100%;
+    cursor: pointer;
+}
+
+/* 幕后的英雄，单选按钮 */
+.score { position: absolute; clip: rect(0 0 0 0); }
+.score:checked + .star {    
+    background: url(../../image/qietu/bluestars.png) repeat-x 0 0;
+    left: 0; z-index: 1;
+}
+.score_1:checked ~ .star_1 { width: 26px; }
+.score_2:checked ~ .star_2 { width: 52px; }
+.score_3:checked ~ .star_3 { width: 78px; }
+.score_4:checked ~ .star_4 { width: 104px;}
+.score_5:checked ~ .star_5 { width: 130px; }
+
+.star_bg:hover .star {  background-image: none; }
+
+/* for IE6-IE8 JS 交互 */
+.star_checked {    
+    background: url(../../image/qietu/graystars.png) repeat-x 0 -20px;
+    left: 0; z-index: 1;
+}

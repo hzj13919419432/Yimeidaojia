@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<title>店铺列表</title>
+	<link rel="stylesheet" type="text/css" href="../../css/aui.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/order/order.css">
+</head>
+<body class="aui-content">
+	<header class="aui-bar aui-bar-nav" id="aui-header">
+        <a class="aui-btn aui-pull-left" tapmode  onclick="api.closeWin()">
+            <span class="aui-iconfont aui-icon-left"></span>
+        </a>
+        <div class="aui-title">我的订单</div>
+    </header>
+	<section id='order_div'>
+		<div class="aui-tab" id="tab">
+		    <div class="aui-tab-item aui-active">全部</div>
+		    <div class="aui-tab-item">待付款</div>
+		    <div class="aui-tab-item">待发货</div>
+		    <div class="aui-tab-item">待收货</div>
+		    <div class="aui-tab-item">已完成</div>
+		</div>
+			<!-- 全部 -->
+		<div class="panel cart-list panel_active" id="order_all_div">
+
+		</div>
+		<!-- 待付款 -->
+		<div class="panel cart-list" id="order_unpay_div">
+
+		</div>
+		<!-- 待发货 -->
+		<div class="panel cart-list" id="order_unSend_div">
+
+		</div>
+		<!-- 待收货 -->
+		<div class="panel cart-list" id="order_unRec_div">
+
+		</div>
+		<!-- 已完成 -->
+		<div class="panel cart-list" id="order_cmpd_div">
+
+		</div>
+	</section>
+</body>
+<script id='order_all_tmpl' type="text/html">
+  {{each orderlist as value}}
+		<div class="aui-card-list">
+			<div class="aui-card-list-header">
+				<span>{{value.O_OrderTime}}</span>
+				<span class="aui-iconfont" >
+					<i class="aui-iconfont aui-icon-trash" onclick="initdelOrder(this,{{value.O_Id}});"></i>
+				</span>
+			</div>
+			<div class="aui-row aui-card-list-content">
+				<div class="aui-col-xs-3">
+					<img src="{{value.detail[0].P_ImgUrl}}" alt="" >
+				</div>
+				<div class="aui-col-xs-9">
+					<div class="aui-row">
+						<div class="aui-col-xs-12">
+							<wbr>{{value.detail[0].P_Name}}</wbr>
+						</div>
+					</div>
+					<div class="aui-row">
+						<div class="aui-col-xs-9">￥{{value.detail[0].OD_Price}}</div>
+						<div class="aui-col-xs-3">x{{value.detail[0].OD_Count}}</div>
+					</div>
+				</div>
+			</div>
+			<div class="aui-card-list-footer">
+				<div class="aui-row">
+					<a href="">订单号：{{value.O_Num}}</a>
+					{{if value.O_Status==0}}
+					  <input type="button" class="aui-btn btncolor" value="立即付款" onclick="onOrderConfirm({{value.detail[0].P_Id}},{{value.detail[0].OD_Count}})">
+					{{/if}}
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</script>
+<script id='order_unpay_tmpl' type="text/html">
+	{{each orderlist as value}}
+		<div class="aui-card-list">
+			<div class="aui-card-list-header">
+				<span>{{value.O_OrderTime}}</span>
+				<span class="aui-iconfont">
+					<i class="aui-iconfont aui-icon-trash"></i>
+				</span>
+			</div>
+			<div class="aui-row aui-card-list-content">
+				<div class="aui-col-xs-3">
+					<img src="{{value.detail[0].P_ImgUrl}}" alt="" >
+				</div>
+				<div class="aui-col-xs-9">
+					<div class="aui-row">
+						<div class="aui-col-xs-12">
+							<wbr>{{value.detail[0].P_Name}}</wbr>
+						</div>
+					</div>
+					<div class="aui-row">
+						<div class="aui-col-xs-9">￥{{value.detail[0].OD_Price}}</div>
+						<div class="aui-col-xs-3">x{{value.detail[0].OD_Count}}</div>
+					</div>
+				</div>
+			</div>
+			<div class="aui-card-list-footer">
+				<div class="aui-row">
+					<a href="">订单号：{{value.O_Num}}</a>
+					<input type="button" class="aui-btn btncolor" value="立即付款" onclick="onOrderConfirm({{value.detail[0].P_Id}},{{value.detail[0].OD_Count}})">
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</script>
+<script id='order_unSend_tmpl' type="text/html">
+	{{each orderlist as value}}
+		<div class="aui-card-list">
+			<div class="aui-card-list-header">
+				<span>{{value.O_OrderTime}}</span>
+				<span class="aui-iconfont">
+					<i class="aui-iconfont aui-icon-trash"></i>
+				</span>
+			</div>
+			<div class="aui-row aui-card-list-content">
+				<div class="aui-col-xs-3">
+					<img src="{{value.detail[0].P_ImgUrl}}" alt="" >
+				</div>
+				<div class="aui-col-xs-9">
+					<div class="aui-row">
+						<div class="aui-col-xs-12">
+							<wbr>{{value.detail[0].P_Name}}</wbr>
+						</div>
+					</div>
+					<div class="aui-row">
+						<div class="aui-col-xs-9">￥{{value.detail[0].OD_Price}}</div>
+						<div class="aui-col-xs-3">x{{value.detail[0].OD_Count}}</div>
+					</div>
+				</div>
+			</div>
+			<div class="aui-card-list-footer">
+				<div class="aui-row">
+					<a href="">订单号：{{value.O_Num}}</a>
+					<input type="button" class="aui-btn aui-btn-danger" value="申请退货">
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</script>
+<script id='order_unRec_tmpl' type="text/html">
+	{{each orderlist as value}}
+		<div class="aui-card-list">
+			<div class="aui-card-list-header">
+				<span>{{value.O_OrderTime}}</span>
+				<span class="aui-iconfont">
+					<i class="aui-iconfont aui-icon-trash"></i>
+				</span>
+			</div>
+			<div class="aui-row aui-card-list-content">
+				<div class="aui-col-xs-3">
+					<img src="{{value.detail[0].P_ImgUrl}}" alt="" >
+				</div>
+				<div class="aui-col-xs-9">
+					<div class="aui-row">
+						<div class="aui-col-xs-12">
+							<wbr>{{value.detail[0].P_Name}}</wbr>
+						</div>
+					</div>
+					<div class="aui-row">
+						<div class="aui-col-xs-9">￥{{value.detail[0].OD_Price}}</div>
+						<div class="aui-col-xs-3">x{{value.detail[0].OD_Count}}</div>
+					</div>
+				</div>
+			</div>
+			<div class="aui-card-list-footer">
+				<div class="aui-row">
+					<a href="">订单号：{{value.O_Num}}</a>
+					<input type="button" class="aui-btn" value="查看物流">
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</script>
+<script id='order_cmpd_tmpl' type="text/html">
+	{{each orderlist as value}}
+		<div class="aui-card-list">
+			<div class="aui-card-list-header">
+				<span>>{{value.O_OrderTime}}</span>
+				<span class="aui-iconfont">
+					<i class="aui-iconfont aui-icon-trash"></i>
+				</span>
+			</div>
+			<div class="aui-row aui-card-list-content">
+				<div class="aui-col-xs-3">
+					<img src="{{value.detail[0].P_ImgUrl}}" alt="" >
+				</div>
+				<div class="aui-col-xs-9">
+					<div class="aui-row">
+						<div class="aui-col-xs-12">
+							<wbr>{{value.detail[0].P_Name}}</wbr>
+						</div>
+					</div>
+					<div class="aui-row">
+						<div class="aui-col-xs-9">￥{{value.detail[0].OD_Price}}</div>
+						<div class="aui-col-xs-3">x{{value.detail[0].OD_Count}}</div>
+					</div>
+				</div>
+			</div>
+			<div class="aui-card-list-footer">
+				<div class="aui-row">
+					<a href="">订单号：{{value.O_Num}}</a>
+					<input type="button" class="aui-btn aui-btn-danger" value="申请售后">
+					<input type="button" class="aui-btn" value="商户评价">
+				</div>
+			</div>
+		</div>
+	{{/each}}
+</script>
+<script type="text/javascript" src="../../script/api.js"></script>
+<script type="text/javascript" src="../../script/aui-tab.js" ></script>
+<script type="text/javascript" src="../../script/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../script/template-web.js"></script>
+<script type="text/javascript" src="../../promise/promise.js"></script>
+<script type="text/javascript" src="../../script/order/order.js"></script>
+</html>

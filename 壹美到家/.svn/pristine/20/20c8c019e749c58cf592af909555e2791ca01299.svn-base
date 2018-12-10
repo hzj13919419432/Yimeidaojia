@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+<link rel="stylesheet" type="text/css" href="../../css/aui.css" />
+<link rel="stylesheet" type="text/css" href="../../css/user/my.css">
+	<title>壹美到家</title>
+</head>
+<body class="aui-content">
+		<header class="aui-bar aui-bar-nav aui-bar-light">
+		<aside class="">
+			<a class="aui-pull-left aui-btn" tapmode onclick="toSetUp()">
+					<div class="aui-iconfont left-icon-c">
+						<img src="../../image/user/usercenter/shezhi.png" alt="">
+					</div>
+			</a>
+			<a class="aui-pull-right aui-btn" tapmode onclick="toMessage()">
+					<div class="aui-iconfont  right-icon-c">
+						<img src="../../image/user/usercenter/xiaoxi.png" alt="">
+					</div>
+			</a>
+		</aside>
+	</header>
+	<section>
+		<div class="user_info">
+			<div onclick="toUserInfo()">
+				<div class="user_img">
+					<img src="../../image/user/my/ic_Avatar_default@3x.png" alt="">
+				</div>
+				<div class="user_nickname" id="nickname">dr00000</div>
+			</div>
+		</div>
+		<div class="order-menu">
+			<div class="menu-title">
+				<span class="my-order">我的订单</span>
+				<span class="all-order" onclick="onOrder(1)">全部订单></span>
+			</div>
+			<div class="order-menu-contenet">
+					<div class="order-menu-contenet-i">
+						<div class="menu-item" tapmode onclick="onOrder(2)">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/daifukuan.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">待付款</div>
+	          </div>
+						<div class="menu-item" tapmode onclick="onOrder(3)">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/daishouhuo.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">待收货</div>
+	          </div>
+						<div class="menu-item" tapmode onclick="onOrder(5)">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/daipingjia.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">待评价</div>
+	          </div>
+						<div class="menu-item" tapmode onclick="onOrder(4)">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/tuihuan.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">退换/售后</div>
+	          </div>
+					</div>
+					<div class="order-menu-contenet-i">
+						<div class="menu-item" tapmode onclick="toStoreFav(1)">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/wodezhuanshu.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">我的专属</div>
+	          </div>
+						<div class="menu-item" tapmode onclick="toShoppingcar()">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/gouwuche.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">购物车</div>
+	          </div>
+						<div class="menu-item"  tapmode onclick="toStoreFav(1)">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/wodeshoucang.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">我的收藏</div>
+	          </div>
+						<div class="menu-item" tapmode onclick="">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/wodezuji.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">我的足迹</div>
+	          </div>
+					</div>
+			</div>
+		</div>
+		<div class="service-menu">
+			<div class="menu-title">
+				<span class="my-service">我的服务</span>
+			</div>
+			<div class="service-menu-contenet">
+					<div class="service-menu-contenet-i">
+						<div class="menu-item" tapmode onclick="toAddEdit()">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/dizhiguanli.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">地址管理</div>
+	          </div>
+						<div class="menu-item" tapmode onclick="toReaLauth()">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/shimingyanzheng.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">实名验证</div>
+	          </div>
+						<div class="menu-item" tapmode onclick="toUserInfo()">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/gerenxinxi.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">个人信息</div>
+	          </div>
+						<div class="menu-item" tapmode onclick="toSetUp()">
+	              <div class="aui-iconfont menu-item-icon">
+	                <img src="../../image/user/my/shezhi_.png" alt="">
+	              </div>
+	              <div class="aui-grid-label menu-item-val">设置</div>
+	          </div>
+					</div>
+			</div>
+		</div>
+	</section>
+</body>
+<script type="text/javascript" src="../../script/api.js"></script>
+<script type="text/javascript" src="../../script/jquery.min.js"></script>
+<script type="text/javascript" src="../../promise/promise.js"></script>
+<script type="text/javascript" src="../../script/user/my.js"></script>
+</html>

@@ -1,0 +1,49 @@
+apiready = function () {
+  init();
+}
+function init() {
+  api.parseTapmode();
+  fixHeader();
+  inittab();
+  initPage();
+}
+function fixHeader() {
+  var header = document.querySelector('body>header');
+  $api.fixStatusBar(header);
+}
+function inittab() {
+  var tab = new auiTab({
+        element:document.getElementById("tab"),
+        index:1,
+        repeatClick:false
+    },function(ret){
+      api.setFrameGroupIndex({
+          name: 'yishow',
+          index: (ret.index-1)
+      });
+    });
+}
+function initPage() {
+  var header = document.querySelector('body>header');
+  var offset = $api.offset(header);
+  var headerH = offset.h;
+    api.openFrameGroup({
+      name: 'yishow',
+      rect: {
+          x: 0,
+          y: headerH,
+          w: 'auto',
+          h: 'auto'
+      },
+      frames: [{
+          name: 'hotarticle',
+          url: './hotarticle.html',
+          bgColor: '#fff'
+      }, {
+          name: 'topic',
+          url: './topic.html',
+          bgColor: '#fff'
+      }]
+  }, function(ret, err) {
+  });
+}

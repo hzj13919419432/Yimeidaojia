@@ -1,0 +1,11 @@
+/*head tab*/
+apiready = function(){
+    api.parseTapmode();
+}
+//点击导航栏内容跳转到限时特惠页面
+function onStoBrand(){
+api.openWin({
+    name: 'StoBrand',
+    url: './storebrand.html'
+});
+}

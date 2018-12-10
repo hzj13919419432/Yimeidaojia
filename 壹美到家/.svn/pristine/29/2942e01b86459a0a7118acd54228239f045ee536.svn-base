@@ -1,0 +1,15 @@
+apiready = function () {
+  init();
+}
+function init() {
+  api.parseTapmode();
+  fixHeaderbar();
+  bindLink();
+}
+function fixHeaderbar() {
+  var header = document.querySelector('body>header');
+  $api.fixStatusBar(header);
+}
+function bindLink() {
+  
+}

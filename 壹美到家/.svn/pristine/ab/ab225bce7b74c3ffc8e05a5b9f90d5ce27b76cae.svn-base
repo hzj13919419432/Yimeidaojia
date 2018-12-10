@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>发布内容</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/aui.css">
+     <link rel="stylesheet" href="../../css/bussschool/publish.css">
+    <style></style>
+</head>
+<body>
+
+
+
+  <header class="aui-bar aui-bar-nav aui-bar-light classhead">
+    <a class="aui-pull-left aui-btn">
+        <span class="aui-iconfont aui-icon-left"></span>
+    </a>
+    <div class="aui-title">发布内容</div>
+
+    <a class="aui-pull-right aui-btn d">
+        <span class="aui-iconfont ">发布</span>
+    </a>
+</header>
+<main>
+   <div>
+     <textarea  class="ptext" placeholder="将好东西分享给好朋友，才更由成就感">
+       将好东西分享给朋友，才更有成就感
+
+     </textarea>
+    <span class="num">0/500</span>
+   </div>
+
+</main>
+<div class="addpic">
+  <img src="../../image/bussschool/bussschool/jia2x.png" alt="">
+  <p>添加图片</p>
+
+</div>
+
+
+
+
+
+
+</body>
+
+
+</html>

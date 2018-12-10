@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>热门话题</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/aui.css">
+    <link rel="stylesheet" href="../../css/discovery/bussschool.css">
+    <style></style>
+</head>
+<body>
+    <header  class="aui-conten">
+        <div class="aui-card-list">
+           <div class="aui-card-list-header">
+                <img src="../../image/bussschool/bussschool/5bfb4a1aN3fbb19b5.jpg" alt="">
+            </div>
+        </div>
+    </header>
+    <div  class="aui-content">
+        <section>
+            <div class="aui-card-list">
+                <div class="aui">
+                    热门话题
+                    <i class="aui-iconfont aui-icon-right"></i>
+                </div>
+                <div class="foot">
+                    <div class="aui-card" id="topicCat">
+                        <!-- <div class="deser">
+                            <img src="../../image/bussschool/bussschool/5ab7e56bN40fbdf5f.jpg" />
+                            <div class="zhen">
+                                <span>活动</span>
+                                <div># 爆品 #</div>
+                            </div>
+                        </div>
+                        <div class="deser">
+                            <img src="../../image/bussschool/bussschool/c4ea598f3e2ebd3afe60f8fcf4291f6.jpg" />
+                            <div class="zhen">
+                                <span>店铺</span>
+                                <div># 爆品 #</div>
+                            </div>
+                        </div>
+                        <div class="deser">
+                            <img src="../../image/bussschool/bussschool/f88710fc4c49d8af7d0c6881fb5a2e9.jpg" />
+                            <div class="zhen">
+                                <span>活动</span>
+                                <div># 爆品 #</div>
+                            </div>
+                        </div>
+                        <div class="deser">
+                            <img src="../../image/bussschool/bussschool/0359ef6429defc9ea619aa73eb5cf1b.jpg" />
+                            <div class="zhen">
+                                <span>活动</span>
+                                <div># 爆品 #</div>
+                            </div>
+                        </div>
+                        <div class="deser">
+                            <img src="../../image/bussschool/bussschool/809752eab1359594.jpg" />
+                            <div class="zhen">
+                                <span>活动</span>
+                                <div># 爆品 #</div>
+                            </div>
+                        </div>
+                        <div class="deser">
+                            <img src="../../image/bussschool/bussschool/5973f72cN8728b99c.jpg" />
+                            <div class="zhen">
+                                <span>活动</span>
+                                <div># 爆品 #</div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="topic">
+          <!-- <div class="aui-card-list-user aui-padded-10">
+              <div class="aui-card-list-user  aui-padded-10">
+                  <div class="aui-card-list-user-avatar">
+                      <img src="../../image/bussschool/bussschool/timg.jpg" class="aui-img-round" />
+                  </div>
+                  <div class="aui-card-list-user-name">
+                      <div>{{topic.TP_Title}}</div>
+                      <small>
+                          <i class="aui-iconfont aui-icon-like"></i>
+                          <i class="aui-iconfont aui-icon-edit"></i>
+                      </small>
+                  </div>
+                  <div class="aui-card-list-user-info">{{topic.TP_CrtTime}}</div>
+              </div>
+              <div class="aui-card-list code">
+                  <div class="aui-list-item">
+                      Dior迪奥烈艳蓝金唇膏
+                  </div>
+                  <div class="aui-list-item">
+                      {{topic.TP_Content}}
+                  </div>
+              </div>
+              <div class="aui-card-list-user aui-padded-15">
+                  <div class="seaImg">
+                      <div id="picOne">　　　
+                          <img src="../../image/bussschool/bussschool/f4eec3a904d8d3c8.jpg" />
+                          <img src="../../image/bussschool/bussschool/73df8766f0dc8e460d9c0a2c59ad321.jpg" />
+                          <img src="../../image/bussschool/bussschool/df2236971dba922dda23c8055cc2c5e.jpg" />
+                          <img src="../../image/bussschool/bussschool/df2236971dba922dda23c8055cc2c5e.jpg" />
+                          <img src="../../image/bussschool/bussschool/123d89d526ea60ce45a29903be8d168.jpg" />
+                          <img src="../../image/bussschool/bussschool/f4eec3a904d8d3c8.jpg" />
+                      </div>
+                  </div>
+                  <div class="mask-img"></div>
+                  <div class="picture">
+                      <img class="phone" src="" alt="" />
+                  </div>
+              </div>
+          </div>
+          <div class="aui-card-list photo">
+              <ul class="aui-list aui-media-list">
+                  <li class="aui-list-item aui-list-item-middle">
+                       <div class="aui-media-list-item-inner">
+                          <div class="aui-list-item-media">
+                              <img src="../../image/bussschool/bussschool/0359ef6429defc9ea619aa73eb5cf1b.jpg" class="aui-list-img-sm">
+                          </div>
+                          <div class="zero">
+                              【新款】 韩国芭妮兰zero温和深层清洁卸妆膏韩国芭妮兰zero温和 100ml
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div> -->
+        </div>
+    </div>
+</body>
+<script type="text/html" id="topicCat_tmpl">
+  {{each topicCat_list as topicCat}}
+  <div class="deser">
+      {{if topicCat.TC_Image}}
+      <img src="{{topicCat.TC_Image}}" />
+      {{else}}<img src="../../image/bussschool/bussschool/809752eab1359594.jpg" />
+      {{/if}}
+      <div class="zhen">
+          <span>活动</span>
+          <div># {{topicCat.TC_Name}} #</div>
+      </div>
+  </div>
+  {{/each}}
+</script>
+<script type="text/html" id="topic_tmpl">
+{{each topic_list as topic}}
+<div class="aui-card-list-user aui-padded-10">
+    <div class="aui-card-list-user  aui-padded-10">
+        <div class="aui-card-list-user-avatar">
+          {{if topic.CU_Photo}}
+            <img src="{{topic.CU_Photo}}" class="aui-img-round" />
+            {{else}}<img src="../../image/bussschool/bussschool/timg.jpg" class="aui-img-round" />
+          {{/if}}
+        </div>
+        <div class="aui-card-list-user-name">
+            <div>{{topic.CU_Nickname ?topic.CU_Nickname:'暂无设置'}}</div>
+            <small>
+                <i class="aui-iconfont aui-icon-like"></i>
+                <i class="aui-iconfont aui-icon-edit"></i>
+            </small>
+        </div>
+        <div class="aui-card-list-user-info">{{topic.TP_CrtTime}}</div>
+    </div>
+    <div class="aui-card-list code">
+        <div class="aui-list-item">
+            {{topic.TP_Title}}
+        </div>
+        <div class="aui-list-item">
+            {{topic.TP_Content}}
+        </div>
+    </div>
+    <div class="aui-card-list-user aui-padded-15">
+        <div class="seaImg">  <!-- seaImg可动态生成多个 -->
+            <div id="picOne">　　　
+                <!-- <img src="../../image/bussschool/bussschool/f4eec3a904d8d3c8.jpg" />
+                <img src="../../image/bussschool/bussschool/73df8766f0dc8e460d9c0a2c59ad321.jpg" />
+                <img src="../../image/bussschool/bussschool/df2236971dba922dda23c8055cc2c5e.jpg" />
+                <img src="../../image/bussschool/bussschool/df2236971dba922dda23c8055cc2c5e.jpg" />
+                <img src="../../image/bussschool/bussschool/123d89d526ea60ce45a29903be8d168.jpg" />
+                <img src="../../image/bussschool/bussschool/f4eec3a904d8d3c8.jpg" /> -->
+                <img src="{{topic.topicimage.TI_Url}}" />
+            </div>
+        </div>
+        <!--  遮罩层 -->
+        <div class="mask-img"></div>
+        <div class="picture">
+            <img class="phone" src="" alt="" />
+        </div>
+    </div>
+</div>
+<div class="aui-card-list photo">
+    <ul class="aui-list aui-media-list">
+        <li class="aui-list-item aui-list-item-middle">
+             <div class="aui-media-list-item-inner">
+                <div class="aui-list-item-media">
+                    <img src="{{topic.P_ImgUrl}}" class="aui-list-img-sm">
+                </div>
+                <div class="zero">
+                    {{topic.P_Name}}
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+{{/each}}
+</script>
+<script type="text/javascript" src="../../script/api.js"></script>
+<script type="text/javascript" src="../../script/aui-tab.js" ></script>
+<script type="text/javascript" src="../../script/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../script/template-web.js"></script>
+<script type="text/javascript" src="../../promise/promise.js"></script>
+<script type="text/javascript" src="../../script/bussschool/bussschool.js"></script>
+</html>

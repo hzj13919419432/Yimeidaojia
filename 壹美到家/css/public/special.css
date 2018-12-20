@@ -1,0 +1,303 @@
+@charset "utf-8";
+header.aui-bar.aui-bar-light{
+	color: #000;
+	font-weight: 700 !important;
+	padding-bottom: 0px;
+	height: 50px;
+	width: 100%;
+}
+header .aui-iconfont{
+	color: #000 !important;
+	font-weight: 700 !important;
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+}
+header .aui-pull-right{
+	position: relative;
+	top: 10px;
+}
+header{
+	position: fixed !important;
+	top:0;
+}
+body > aside{
+	height: 180px;overflow: hidden;
+}
+#menu .menuBgi{
+	width: 48px;
+	height: 48px;
+	background-color: #fff;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#menu .menuBgi img{
+	width: 100%;
+	height: 100%;
+}
+#menu .aui-grid-label{
+	color: #000;
+	margin-top: 10px;
+}
+#listTop{
+	background-color: #fff;
+	color: #000;
+	border-top: 10px solid #F6F6F6;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	border-bottom: 10px solid #F6F6F6;
+
+}
+#listTop > aside{
+	height: 50px;
+	text-align: center;
+	font-size: 1em;
+	color: #000;
+	line-height: 50px;
+	position: relative;
+}
+#listTop .aui-list .aui-list-item{
+	background-color: #F8F8F8;
+}
+#listTop .aui-list .aui-list-item-media{
+	width: 4.5rem;
+}
+#listTop .aui-list .aui-list-item-title{
+	font-size: 0.98em;
+}
+#listTop .aui-list .prices{
+	margin-left: 4.2rem;
+}
+#listTop .aui-list .newer-Label{
+	margin-top: 20px;
+	background-color:#FF2742;
+	color: white;
+	font-size: 0.5em;
+	line-height: 20px;
+	height: 20px;
+}
+#listTop .aui-list .newer-price{
+	font-size: 1.4em;
+	color: #FF2742;
+	margin-right: 5px;
+}
+#listTop .aui-list .newer-old-price{
+	font-size: 0.9em;
+}
+#listTop .aui-list .aui-info{
+	padding-top:0;
+	text-align: right;
+}
+#listTop .aui-list .aui-info .toBuy{
+	background-color: #FF2742;
+	font-size: 0.9em;
+	display:inline-block;
+	width: 60px;
+	height:24px;
+	line-height:24px;
+	text-align: center;
+	color:white;
+	position: relative;
+}
+
+#worthBuyList > div{
+	margin-bottom: 2px;
+}
+#worthBuyList > div> div{
+	width: 49%;
+	background-color: #F2F6FA;
+	float: left;
+	padding-bottom: 10px;
+	padding-right: 10px;
+}
+#worthBuyList > div> div:nth-of-type(2n+1){
+	margin-right: 2%;
+}
+#worthBuyList .wb-img{
+	height: 160px;
+	overflow: hidden;
+	padding-top: 20px;
+}
+#worthBuyList .wb-img img{
+	width: 90%;
+	height: 90%;
+	margin:0 auto;
+}
+#worthBuyList .wb-title{
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 0.8em;
+}
+#worthBuyList .wb-p-c-box{
+	margin-top: 10px;
+}
+#worthBuyList .disPrice{
+	display: inline-block;
+	float: left;
+	margin:0 4px 0 10px;
+	font-size: 1em;
+	color:#FF2742;
+}
+#worthBuyList  .oldPrice{
+	display: inline-block;
+	float: left;
+	margin-top: 5px;
+	font-size: 0.7em;
+	position: relative;
+	color:#ADADAD;
+}
+#worthBuyList  .cartBox span{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	overflow: hidden;
+
+}
+#worthBuyList  .cartBox span img{
+	height: 100%;
+	width: 100%;
+}
+#worthBuyList  .aui-iconfont{
+	color: #fff;
+	font-size: 1.3m;
+}
+.menu-item {
+	padding-bottom: 10px;
+	border-bottom: 10px solid #F6F6F6;
+}
+.menu-item .item-head{
+	min-height: 120px;
+	height: 120px;
+	background-color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+.menu-item .item-head >div{
+	width: 96%;
+	height: 100%;
+	margin: 0 auto;
+	border-radius: 46px;
+	background-color: #F2F6FA;
+	padding-left: 2.5em;
+}
+.menu-item .item-head >div>div{
+	float: left;
+	height: 100%;
+
+}
+.menu-item .item-head >div>div:nth-of-type(1){
+	width: 60%;
+	padding-bottom: 5px;
+	
+}
+.menu-item .item-head >div>div:nth-of-type(2){
+	width: 30%;
+	overflow: hidden;
+}
+.menu-item .item-head >div>div:nth-of-type(2) img{
+	width: 100%;
+	height: 100%;
+}
+.menu-item .item-head .menu-item-title{
+	position: relative;
+	top: 5px;
+	margin-bottom:3px;
+	font-size: 18px;
+	color:#3EA7D4;
+}
+.menu-item .item-head .menu-item-sign{
+	color: #C7C7C7;
+	font-size: 10px;
+	letter-spacing: 0.2em;
+}
+.menu-item .item-head .clickBtnBox{
+	padding-top: 0;
+}
+.menu-item .item-head  .clickBtn{
+	height: 25px;
+	line-height: 25px;
+	font-size:12px;
+	background-color: #E8332A;
+	min-width:80px;
+	width: 100px;
+	max-width: 120px;
+	display:inline-block;
+	border-radius: 15px;
+	color:#fff;
+	padding-left: 0.6em;
+	position: relative;
+}
+
+.menu-item  .clickBtn span{
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	overflow: hidden;
+	position: absolute;
+	top: 3px;
+	right: 3px;
+}
+.menu-item  .clickBtn span img{
+	width: 100%;
+	height: 100%;
+}
+.menu-item > .item-content{
+	background-color: #fff;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 1.5em;
+}
+.menu-item > .item-content >div >div{
+	width: 32%;
+	float: left;
+	background-color: #F2F6FA;
+}
+.menu-item >.item-content >div >div:nth-of-type(2){
+	margin-left: 2%;
+	margin-right: 2%;
+}
+
+.menu-item >.item-content >div >div{
+	padding: 10px;
+}
+.menu-item >.item-content .shop-item-img-box{
+	width: 100%;
+	height: 120px;
+	overflow: hidden;
+}
+.menu-item .item-content .shop-item-img-box img{
+	width: 100%;
+	height: 100%;
+}
+.menu-item .item-content .shop-item-title{
+	font-size: 0.7em;
+}
+.shop-item-p-c{
+	margin-top: 20px;
+}
+
+.shop-item-p-c>div:nth-of-type(1){
+	width: 70%;
+	float: left;
+	font-size: 0.8em;
+	margin-top: 5px;
+}
+.shop-item-p-c>div:nth-of-type(1) cite{
+	font-size: 0.5em;
+	color: #FF2742;
+}
+.shop-item-p-c>div:nth-of-type(1) span{
+	font-size: 0.9em;
+	color:#FF2742;
+}
+.shop-item-p-c>div:nth-of-type(1) del{
+	font-size: 0.6em;
+	color: #A3A4A4;
+}
+.menu-item .item-content .shop-item-p-c>div:nth-of-type(2){
+	width: 24px;
+	height:24px;
+	float: right;
+}

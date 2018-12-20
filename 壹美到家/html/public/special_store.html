@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>壹美到家</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/aui.css">
+    <link rel="stylesheet" href="../../css/public/special_store.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <div class="aui-searchbar" id="search">
+            <i class="aui-iconfont aui-icon-left" onclick="api.closeWin();"></i>
+            <div class="aui-searchbar-input aui-border-radius" tapmode>
+                <i class="aui-iconfont aui-icon-search"></i>
+                <form action="javascript:search();">
+                    <input type="search" placeholder="请输入搜索内容" id="search-input">
+                </form>
+            </div>
+        </div>
+    </header>
+    <section class="aui-content" id='specialbrand_div'>
+    </section>
+</body>
+<script id="specialbrand_tmpl" type="text/html">
+	 {{each specialbrand as value}}
+   <div class="aui-card-list">
+       <div class="aui-card-list-content" onclick="onStoreDetail({{value.S_Id}})">
+           <img src="{{value.SB_Image}}" />
+       </div>
+       <div class="aui-card-list-footer">
+           <div class="aui-row" onclick="onStoreDetail({{value.S_Id}})">
+               <div class="aui-col-xs-10">{{value.SB_Title}}</div>
+               <div class="aui-col-xs-2" >详情</div>
+           </div>
+       </div>
+   </div>
+ 	 {{/each}}
+</script>
+<script type="text/javascript" src="../../script/api.js"></script>
+<script type="text/javascript" src="../../script/jquery.min.js"></script>
+<script type="text/javascript" src="../../script/template-web.js"></script>
+<script type="text/javascript" src="../../promise/promise.js"></script>
+<script type="text/javascript" src="../../script/public/specialstore.js"></script>
+</html>

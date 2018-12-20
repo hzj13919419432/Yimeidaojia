@@ -1,0 +1,16 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin:0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    color: gray;
+}
+header{
+    background-color: rgba(255,255,255,0) !important;
+    position: fixed !important;
+    top:0;
+}
+header a{
+    margin-top:20px !important; 
+}

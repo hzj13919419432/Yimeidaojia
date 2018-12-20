@@ -1,0 +1,33 @@
+apiready = function(){
+
+  init();
+};
+
+function init(){
+  api.parseTapmode();
+  fisHeadbar();
+}
+function fisHeadbar() {
+  var header = document.querySelector('body>header');
+  $api.fixStatusBar(header);
+}
+
+function loadUserInfo() {
+  var data ={};
+  data.uid = $api.getStorage('userid');
+  var result = get_userinfo(data);
+  result.then(function(res){
+    if(res.status ==200){
+      var nickname = res.info.CU_Nickname;
+      var img = res.info.CU_Photo;
+      if(nickname!=null && $.trim(nickname).length>0){
+        $('#nickname').text(nickname);
+      }else{
+        $('#nickname').text('暂未设置');
+      }
+      if(nickname!=null && $.trim(img).length>0){
+        $('#user-pic').attr('src',img);
+      }
+    }
+  });
+}

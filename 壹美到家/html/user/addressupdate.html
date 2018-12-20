@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<link rel="stylesheet" type="text/css" href="../../css/aui.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/user/addressupdate.css" />
+	<style>
+	
+	</style>
+</head>
+
+<body>
+	<header class="aui-bar aui-bar-nav" id="header" style="padding-top:20px;">
+		<a class="aui-btn aui-pull-left" tapmode onclick="api.closeWin()">
+			<span class="aui-iconfont aui-icon-left"></span>
+		</a>
+		<div class="aui-title">新增地址</div>
+		<a class=" aui-pull-right" tapmode onclick="saveAddress()">
+			保存
+		</a>
+	</header>
+	<div id="address">
+		<ul class="aui-list aui-form-list">
+			<li class="aui-list-item">
+				<div class="aui-list-item-inner">
+					<div class="aui-list-item-label label">
+						收货人
+					</div>
+					<div class="aui-list-item-input">
+						<input type="text" id="txtName" placeholder="请输入收货人姓名">
+					</div>
+				</div>
+			</li>
+			<li class="aui-list-item">
+				<div class="aui-list-item-inner">
+					<div class="aui-list-item-label label">
+						联系电话
+					</div>
+					<div class="aui-list-item-input">
+						<input type="number" id="txtTel" placeholder="请输入联系电话">
+					</div>
+				</div>
+			</li>
+			<li class="aui-list-item" id="addressView">
+				<div class="aui-list-item-inner aui-list-item-arrow" onclick="onSelectAddress()">
+					<div class="aui-list-item-inner">
+						<div class="aui-list-item-title label" >所在地区</div>
+						<div class="aui-list-item-right">
+							<div id="txtArea" style="position:relative;top:0; right:30px;color:#888;font-size:14px;"></div>
+						</div>
+					</div>
+				</div>
+			</li>
+			<li class="aui-list-item">
+				<div class="aui-list-item-inner">
+					<div class="aui-list-item-label label">
+						详细地址
+					</div>
+					<div class="aui-list-item-input">
+						<input type='textarea' id='txtDetail'  placeholder="请输入详细地址" style="height:2rem;width: 100%;"/>
+					</div>
+				</div>
+			</li>
+		</ul>
+  </div>
+</body>
+<script type="text/javascript" src="../../script/api.js"></script>
+<script type="text/javascript" src="../../script/jquery.min.js"></script>
+<script type="text/javascript" src="../../promise/promise.js"></script>
+<script type="text/javascript" src="../../script/pickercity.js"></script>
+<script type="text/javascript" src="../../script/user/updateaddress.js"></script>
+</html>

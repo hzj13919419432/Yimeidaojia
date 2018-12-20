@@ -1,0 +1,83 @@
+@@charset "UTF-8";
+*{
+    padding: 0;
+    margin:0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 12px;
+    background: #fff;
+}
+body{
+  background-color: #fff;
+}
+header .my-icon,header .head-title{
+  color: #000 !important;
+}
+header .head-title{
+  font-weight: 700;
+  color: #000 !important;
+}
+section .search-bar{
+  margin-top: 15px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fff;
+}
+section .search-bar .search-input{
+  display: inline-block;
+  width: 80%;
+  text-align: center;
+  margin-left: 5%;
+}
+section .search-bar .search-input input{
+  height: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #BBB9BA;
+  font-size: 16px;
+  width: 100%;
+  color: #979797;
+}
+section .search-btn-box{
+  display: inline-block;
+  width: 10%;
+}
+section .search-btn{
+  font-size: 16px !important;
+}
+#mapbox{
+  width: 100%;
+  height: 300px;
+}
+section .near-stores{
+  margin-top: 25px;
+}
+section .near-stores .title{
+  margin-left: 1em;
+}
+section .stores-list .list-item{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 8px;
+  width: 100%;
+}
+section .stores-list .list-item .info{
+  width: 80%;
+  overflow: hidden;
+}
+section .stores-list .list-item .info-1{
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+section .stores-list .list-item .info-2{
+  margin-top: 10px;
+  font-size: 14px;
+  /*border-bottom: 1px solid #ccc;*/
+  text-decoration: underline;
+  pdding-bottom: 2px;
+}
+section .stores-list .list-item .info-3{
+  margin-top: 5px;
+  font-size: 12px;
+}

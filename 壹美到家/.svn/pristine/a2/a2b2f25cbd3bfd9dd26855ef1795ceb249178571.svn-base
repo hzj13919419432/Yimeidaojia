@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<meta charset="UTF-8">
+	<title>壹美到家</title>
+	<link rel="stylesheet" type="text/css" href="../../css/aui.css">
+	<link rel="stylesheet" type="text/css" href="../../css/aui-slide.css" />
+	<link type="text/css" rel="stylesheet" href="../../css/public/bandhall.css">
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav aui-bar-light">
+        <a class="aui-pull-left aui-btn">
+             <span class="aui-iconfont aui-icon-left"></span>
+        </a>
+        <div class="aui-title">全球好货 - 欧洲</div>
+    </header>
+    <div class="aui-content">
+        <!--头部图片-->
+        <img src="../../image/public/bandhall/sauvage3.jpg" alt="">
+        <!--轮播-->
+        <div>-- 精选品牌 --</div>
+        <!-- 楼层一 -->
+        <section>
+           <div class="aui-card-list">
+                <div class="aui-card-list-header">
+                    <img src="../../image/public/rushdetail/bj.jpg" alt="">
+                </div>
+                <div class="aui-card-list-content-padded">
+                    <h4>迪奥是法国著名时尚品牌</h4>
+                    <div>Dior的产品风格是彩色缤纷，体验艺术和具有高效的护肤工艺，在全球香水和化妆市场占有重要的地位。</div>
+                </div>
+                <div class="aui-card-list-footer">
+                    <div>
+                        <div class="aui-row amen">
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                               <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 楼层二 -->
+        <section>
+           <div class="aui-card-list">
+                <div class="aui-card-list-header">
+                    <img src="../../image/public/rushdetail/bj.jpg" alt="">
+                </div>
+                <div class="aui-card-list-content-padded">
+                    <h4>迪奥是法国著名时尚品牌</h4>
+                    <div>Dior的产品风格是彩色缤纷，体验艺术和具有高效的护肤工艺，在全球香水和化妆市场占有重要的地位。</div>
+                </div>
+                <div class="aui-card-list-footer">
+                    <div>
+                        <div class="aui-row amen">
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                               <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <div class="aui-card-list">
+            <div class="aui-card-list-content">
+                <img src="../../image/public/rushdetail/bj.jpg" />
+            </div>
+            <div class="footer">
+                时尚之都尽在欧洲，为您带来一个奢华的体验！
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>消息中心</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/aui.css">
+    <link rel="stylesheet" href="../../css/user/message.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <a class="aui-pull-left aui-btn" onclick="api.closeWin();">
+            <span class="aui-iconfont aui-icon-left"></span>
+        </a>
+        <div class="aui-title">消息中心</div>
+    </header>
+    <section id="messageDiv">
+    </section>
+
+</body>
+<script id="message_tmpl" type="text/html">
+	 {{each messageList as value}}
+   <div class="aui-card-list-header aui-card-list-user aui-border-b" onclick="setMassageRead(this,{{value.M_ID}})">
+       <div class="aui-card-list-user-avatar">
+           <img src="../../image/user/message/ic_hdjx@2x.png" class="aui-img-round" />
+       </div>
+       <div class="aui-card-list-user-name">
+       <div>{{value.M_Title}}
+         {{if value.M_IsRead == null}}
+         <span class="notReadLabel">●</span>
+         {{/if}}
+       </div>
+           <i class="marg">{{value.M_CrtTime}}</i>
+       </div>
+       <div class="aui-card-list-user-info">
+           {{value.M_Content}}
+       </div>
+   </div>
+ 	 {{/each}}
+</script>
+<script type="text/javascript" src="../../script/api.js"></script>
+<script type="text/javascript" src="../../script/jquery.min.js"></script>
+<script src="../../promise/promise.js"></script>
+<script type="text/javascript" src="../../script/template-web.js"></script>
+<script type="text/javascript" src="../../script/user/message.js"></script
+</html>

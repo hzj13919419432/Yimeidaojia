@@ -1,0 +1,46 @@
+/*head tab*/
+apiready = function(){
+      api.parseTapmode();
+  }
+//点击导航栏内容跳转到限时特惠页面
+function onTimeSpecial(){
+  api.openWin({
+      name: 'TimeSpecial',
+      url: './timespecial.html'
+  });
+}
+//点击更多品牌跳转到品牌馆页面
+function onBandHall(){
+  api.openWin({
+      name: 'BandHall',
+      url: './bandhall.html'
+  });
+}
+//点击更多跳转到人气推荐
+function onProductRecmd(){
+  api.openWin({
+      name: 'ProductRecmd',
+      url: './productrecmd.html'
+  });
+}
+//点击右上角消息跳转到消息
+function onMessAge(){
+  api.openWin({
+      name: 'MessAge',
+      url: '../user/message.html'
+  });
+}
+//点击头部中间输入框跳转到搜索页面
+function onSearch(){
+  api.openWin({
+      name: 'Search',
+      url: './search.html'
+  });
+}
+//点击成为达人跳转到达人页面
+function onSpecialDr(){
+  api.openWin({
+      name: 'SpecialDr',
+      url: './special_dr.html'
+  });
+}

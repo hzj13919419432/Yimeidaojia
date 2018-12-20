@@ -1,0 +1,79 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin:0 auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    color: gray;
+}
+body{
+    background-color: #fff;
+}
+header{
+    padding-top:20px;
+    border-bottom: 1px solid #dddddd;
+    position: fixed !important;
+}
+.aui-content{
+    margin-top:3.2rem; 
+}
+.aui-bar-nav{
+    background-color: #000 !important;
+}
+.aui-searchbar {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+.aui-icon-left:before {
+    color:#fff;
+    margin-left:0.5rem; 
+}
+#tab {
+    height:100%;
+    position: relative;
+    background-color: #ececec;
+    -webkit-align-self: center;
+    align-self: center;
+    position: fixed;
+}
+.imga{
+    text-align: center;
+    margin-top:5px;
+    color: #000; 
+    font-size:0.6rem; 
+}
+.aui-col-xs-4{
+    padding:0 20px 10px 0;
+}
+.aui-card-list-content{
+    padding:0 0 0 20px !important;
+}
+.card{
+    padding:0 20px 10px 0;
+    text-align: center;
+    font-size:0.75rem;
+    color:gray; 
+}
+.aui-col-xs-9{
+    margin-top: 20px;
+    margin-left:25%;
+}
+.aui-border-t {
+    background-size: 100% 0;
+}
+.aui-active{
+    background-color: #fff;
+    color:#ddd;
+}
+.aui-card-list {
+    margin-bottom: 0rem !important; 
+}
+.aui-tab-item {
+    font-size: 0.6rem !important;
+    color: GRAY !important;
+}
+.aui-tab-item.aui-active {
+    color: #ecbc44 !important;
+    border-bottom: 0px solid #e51c23 !important;
+}
+

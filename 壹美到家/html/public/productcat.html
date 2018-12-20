@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>商品分类</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/aui.css">
+    <link rel="stylesheet" href="../../css/public/productcat.css">
+    <link rel="stylesheet" type="text/css" href="../../css/aui-slide.css"/>
+    <style></style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav aui-bar-light"> 
+        <div class="aui-searchbar" id="search">
+            <i class="aui-iconfont aui-icon-left"></i>
+            <div class="aui-searchbar-input aui-border-radius" onclick="onSearch()">
+                <i class="aui-iconfont aui-icon-search"></i>
+                <form>
+                    <input type="search" placeholder="2.5斤爱媛第二件3元" id="search-input">
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="aui-content aui-row">
+        <div class="aui-col-xs-3" id="tab">
+            <div class="aui-tab-item aui-active">人气美妆</div>
+            <div class="aui-tab-item">休闲零食</div>
+            <div class="aui-tab-item">保健滋补</div>
+            <div class="aui-tab-item">母婴健康</div>
+            <div class="aui-tab-item">水果生鲜</div>
+            <div class="aui-tab-item">乳饮酒速食</div>
+            <div class="aui-tab-item">百货家具</div>
+            <div class="aui-tab-item">服饰箱包</div>
+            <div class="aui-tab-item">宠物专区</div>
+            <div class="aui-tab-item">热门品牌</div>
+        </div>
+        <div class="aui-col-xs-9">
+            <div id="tabs" class="action">
+                <div class="aui-card-list">
+                    <div class="card">- 分类 -</div>
+                    <div class="aui-card-list-content aui-border-t"> 
+                        <div class="aui-row">
+                            <div class="aui-col-xs-4" onclick="onSpecial()">
+                                <img src="../../image/public/productcat/59acaea4N9a628512.jpg" />
+                                <div class="imga">补水面膜</div>
+                            </div>
+                            <div class="aui-col-xs-4" onclick="onSpecial()" >
+                                <img src="../../image/public/productcat/5779cb53N4f383983.jpg" />
+                                <div class="imga">唇膏口红</div>
+                            </div>
+                            <div class="aui-col-xs-4" onclick="onSpecial()">
+                                <img src="../../image/public/productcat/54dd651fNf16722d9.jpg" />
+                                <div class="imga">眼部护理</div>
+                            </div>
+                            <div class="aui-col-xs-4" onclick="onSpecial()">
+                                <img src="../../image/public/productcat/59815639Nd73d64ce.jpg" />
+                                <div class="imga">爽肤水</div>
+                            </div>
+                            <div class="aui-col-xs-4" onclick="onSpecial()">
+                                <img src="../../image/public/productcat/5aaf87b6N9627e896.jpg" />
+                                <div class="imga">精华液</div>
+                            </div>
+                            <div class="aui-col-xs-4" onclick="onSpecial()">
+                                <img src="../../image/public/productcat/5abc60a1af21e0cc.jpg" />
+                                <div class="imga">保湿乳液</div>
+                            </div>
+                            <div class="aui-col-xs-4" onclick="onSpecial()">
+                                <img src="../../image/public/productcat/666798570ccc0510.jpg" />
+                                <div class="imga">香水香氛</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aui-card-list">
+                        <div class="card">- 热门品牌 -</div>
+                        <div class="aui-card-list-content aui-border-t"> 
+                            <div class="aui-row">
+                                <div class="aui-col-xs-4" onclick="onSpecial()">
+                                    <img src="../../image/public/productcat/59acaea4N9a628512.jpg" />
+                                    <div class="imga">补水面膜</div>
+                                </div>
+                                <div class="aui-col-xs-4" onclick="onSpecial()">
+                                    <img src="../../image/public/productcat/5779cb53N4f383983.jpg" />
+                                    <div class="imga">唇膏口红</div>
+                                </div>
+                                <div class="aui-col-xs-4" onclick="onSpecial()">
+                                    <img src="../../image/public/productcat/54dd651fNf16722d9.jpg" />
+                                    <div class="imga">眼部护理</div>
+                                </div>
+                                <div class="aui-col-xs-4" onclick="onSpecial()">
+                                    <img src="../../image/public/productcat/59815639Nd73d64ce.jpg" />
+                                    <div class="imga">爽肤水</div>
+                                </div>
+                                <div class="aui-col-xs-4" onclick="onSpecial()">
+                                    <img src="../../image/public/productcat/5aaf87b6N9627e896.jpg" />
+                                    <div class="imga">精华液</div>
+                                </div>
+                                <div class="aui-col-xs-4" onclick="onSpecial()">
+                                    <img src="../../image/public/productcat/5abc60a1af21e0cc.jpg" />
+                                    <div class="imga">保湿乳液</div>
+                                </div>
+                                <div class="aui-col-xs-4" onclick="onSpecial()">
+                                    <img src="../../image/public/productcat/666798570ccc0510.jpg" />
+                                    <div class="imga">香水香氛</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div id="tabs"></div>
+            <div id="tabs"></div>
+            <div id="tabs"></div>
+            <div id="tabs"></div>
+            <div id="tabs"></div>
+            <div id="tabs"></div>
+            <div id="tabs"></div>
+            <div id="tabs"></div>
+            <div id="tabs"></div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../../script/api.js"></script>
+<script type="text/javascript" src="../../script/aui-tab.js" ></script>
+<script type="text/javascript" src="../../script/jquery/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="../../script/public/productcat.js"></script>
+<script type="text/javascript">
+    apiready = function(){
+        api.parseTapmode();
+    }
+    var tab = new auiTab({
+        element:document.getElementById("tab"),
+        index:1,
+        repeatClick:false
+    },function(ret){
+        console.log(ret);
+        $('.aui-conent #tabs').eq(ret.index-1).addClass('action');
+        $('.aui-conent #tabs').eq(ret.index-1).siblings('.aui-conent #tabs').removeClass('action');
+    });
+
+    
+</script>
+</html>

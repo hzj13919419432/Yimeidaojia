@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<meta charset="UTF-8">
+	<title>壹美到家</title>
+	<link rel="stylesheet" type="text/css" href="../../css/aui.css">
+	<link rel="stylesheet" type="text/css" href="../../css/aui-slide.css" />
+    <link type="text/css" rel="stylesheet" href="../../css/public/bandhall.css">
+<ad>
+<body>
+    <header class="aui-bar aui-bar-nav aui-bar-light">
+        <a class="aui-pull-left aui-btn" onclick="api.closeWin();">
+             <span class="aui-iconfont aui-icon-left"></span>
+        </a>
+        <div class="aui-title">全球好货 • 品牌馆</div>
+    </header>
+    <div class="aui-content">
+        <!--头部导航-->
+        <div class="aui-card-list">
+            <div class="aui-card-list-content">
+                <img src="../../image/public/bandhall/u=1808031275,4113292716&fm=26&gp=0.jpg" />
+            </div>
+            <div class="aui-card-list-footer">
+                <div class="aui-row aui-text-center" id="country_box">
+                    <!-- <div class="aui-col-xs-4 home">
+                        <div class="aui-row">中国</div>
+                        <p>China</p>
+                        <div class="homes"></div>
+                    </div>
+                    <div class="aui-col-xs-4 home">
+                        <div class="aui-row">欧洲</div>
+                        <p>Europe</p>
+                        <div class="homes"></div>
+                    </div>
+                    <div class="aui-col-xs-4 home">
+                        <div class="aui-row">美国</div>
+                        <p>America</p>
+                    </div>
+
+                    <div class="aui-col-xs-4 home">
+                        <div class="aui-row">韩国</div>
+                        <p>Korea</p>
+                        <div class="homes"></div>
+                    </div>
+                    <div class="aui-col-xs-4 home">
+                        <div class="aui-row">日本</div>
+                        <p>Japan</p>
+                        <div class="homes"></div>
+                    </div>
+                    <div class="aui-col-xs-4 home">
+                        <div class="aui-row">澳新</div>
+                        <p>Australia</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!--全球新品-->
+        <section>
+           <div class="aui-card-list">
+                <div class="aui-card-list-content-padded">
+                    <div>-- 限时特惠 --</div>
+                    <div>NEW ARRIVALS</div>
+                </div>
+                <div class="aui-card-list-footer">
+                    <div>
+                        <div class="aui-row amen">
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                        <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                               <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                           <div class="aui-col-xs-4">
+                               <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                               <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                               <div><span>活动价</span> <a href="">￥520</a></div>
+                               <p>￥760</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--全球好物攻略-->
+        <div class="aui-card-list-content-padded">
+            <div>-- 全球好物攻略 --</div>
+            <div>GLOBAL SHOPPING</div>
+        </div>
+        <!--中国-->
+        <section onclick="onStoBrand()">
+            <div class="aui-card-list">
+                <div class="aui-card-list-content">
+                    <div class="aui-row">
+                        <div class="aui-col-xs-6 one">
+                            <img src="../../image/public/bandhall/20181207095709.png" alt="">
+                        </div>
+                        <div class="aui-col-xs-6 two" id="cnHotsale">
+                            <!-- <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="aui-card-list-footer" style="padding:15px">
+                    <div class="aui-row aui-grid" id="cnPlist">
+                        <!-- <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">隆力奇</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅芳</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅倩</div>
+                       </div>
+                       <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丁家宜</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">美家净</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丹姿</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--欧洲-->
+        <section onclick="onStoBrand()">
+            <div class="aui-card-list">
+                <div class="aui-card-list-content">
+                    <div class="aui-row">
+                        <div class="aui-col-xs-6 one">
+                            <img src="../../image/public/bandhall/20181207173943.png" alt="">
+                        </div>
+                        <div class="aui-col-xs-6 two" id="epHotsale">
+                            <!-- <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                             </div>
+                            <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                            </div> -->
+                       </div>
+                    </div>
+                </div>
+                <div class="aui-card-list-footer" style="padding:15px">
+                    <div class="aui-row aui-grid" id="epPlist">
+                        <!-- <div class="aui-col-xs-4">
+                             <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">隆力奇</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅芳</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅倩</div>
+                       </div>
+                       <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丁家宜</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                           <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">美家净</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丹姿</div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <!--美国-->
+        <section onclick="onStoBrand()">
+            <div class="aui-card-list">
+                <div class="aui-card-list-content">
+                    <div class="aui-row">
+                        <div class="aui-col-xs-6 one">
+                            <img src="../../image/public/bandhall/20181207174023.png" alt="">
+                        </div>
+                        <div class="aui-col-xs-6 two" id="amHotsale">
+                            <!-- <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                             </div>
+                            <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                            </div> -->
+                       </div>
+                    </div>
+                </div>
+                <div class="aui-card-list-footer" style="padding:15px">
+                    <div class="aui-row aui-grid" id="amPlist">
+                        <!-- <div class="aui-col-xs-4">
+                             <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">隆力奇</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅芳</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅倩</div>
+                       </div>
+                       <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丁家宜</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                           <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">美家净</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丹姿</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--韩国-->
+        <section onclick="onStoBrand()">
+            <div class="aui-card-list">
+                <div class="aui-card-list-content">
+                    <div class="aui-row">
+                        <div class="aui-col-xs-6 one">
+                            <img src="../../image/public/bandhall/20181207174048.png" alt="">
+                        </div>
+                        <div class="aui-col-xs-6 two" id="krHotsale">
+                            <!-- <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                            </div> -->
+                    </div>
+                    </div>
+                </div>
+                <div class="aui-card-list-footer" style="padding:15px">
+                    <div class="aui-row aui-grid" id="krPlist">
+                        <!-- <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">隆力奇</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅芳</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅倩</div>
+                    </div>
+                    <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丁家宜</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                        <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">美家净</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丹姿</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--日本-->
+        <section onclick="onStoBrand()">
+            <div class="aui-card-list">
+                <div class="aui-card-list-content">
+                    <div class="aui-row">
+                        <div class="aui-col-xs-6 one">
+                        <img src="../../image/public/bandhall/20181207174118.png" alt="">
+                        </div>
+                        <div class="aui-col-xs-6 two" id="jpHotsale">
+                            <!-- <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                            </div> -->
+                    </div>
+                    </div>
+                </div>
+                <div class="aui-card-list-footer" style="padding:15px">
+                <div class="aui-row aui-grid" id="jpPlist">
+                        <!-- <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">隆力奇</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅芳</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅倩</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丁家宜</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                        <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">美家净</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丹姿</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--澳新-->
+        <section onclick="onStoBrand()">
+            <div class="aui-card-list">
+                <div class="aui-card-list-content">
+                    <div class="aui-row">
+                        <div class="aui-col-xs-6 one">
+                        <img src="../../image/public/bandhall/20181207174154.png" alt="">
+                        </div>
+                        <div class="aui-col-xs-6 two" id="atHotsale">
+                            <!-- <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="aui-row">
+                                <div class="aui-col-xs-6">
+                                    <div>中国热售</div>
+                                    <div>百雀羚</div>
+                                </div>
+                                <div class="aui-col-xs-6">
+                                    <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                                </div>
+                            </div> -->
+                    </div>
+                    </div>
+                </div>
+                <div class="aui-card-list-footer" style="padding:15px">
+                <div class="aui-row aui-grid" id="atPlist">
+                        <!-- <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">隆力奇</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅芳</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">雅倩</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丁家宜</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                        <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">美家净</div>
+                        </div>
+                        <div class="aui-col-xs-4">
+                            <div>
+                                <img src="../../image/public/bandhall/54dd651fNf16722d9.jpg" alt="">
+                            </div>
+                            <div class="aui-grid-label">丹姿</div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<!-- 国家模板  -->
+<script type="text/html" id="country_tmpl">
+	{{each country_list as country index}}
+	<div class="aui-col-xs-4 home">
+			<div class="aui-row">{{country.C_NameCN}}</div>
+			<p>{{country.C_NameEn}}</p>
+			{{if (index+1)%3!=0}}
+			<div class="homes"></div>
+			{{/if}}
+	</div>
+	{{/each}}
+</script>
+<script type="text/javascript" src="../../script/api.js" ></script>
+<script type="text/javascript" src="../../script/jquery.min.js"></script>
+<script type="text/javascript" src="../../script/aui-slide.js"></script>
+<script type="text/javascript" src="../../script/template-web.js"></script>
+<script type="text/javascript" src="../../promise/promise.js"></script>
+<script type="text/javascript" src="../../script/public/bandhall.js"></script>
+</html>

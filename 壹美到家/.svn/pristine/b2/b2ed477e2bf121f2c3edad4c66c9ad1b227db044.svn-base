@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<meta charset="UTF-8">
+	<title>壹美到家</title>
+	<link rel="stylesheet" type="text/css" href="../../css/aui.css">
+	<link rel="stylesheet" type="text/css" href="../../css/aui-slide.css" />
+	<link rel="stylesheet" type="text/css" href="../../css/public/timespecial.css">
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav aui-bar-light">
+        <a class="aui-pull-left aui-btn">
+            <span class="aui-iconfont aui-icon-left"></span>
+        </a>
+        <div class="aui-title">限时特惠</div>
+    </header>
+    <div class="aui-content">
+        <section>
+           <div class="aui-card-list">
+                <div class="aui-card-list-header">
+                    <img src="../../image/public/rushdetail/bj.jpg" alt="">
+                </div>
+                <div class="aui-card-list-content-padded">
+                    -- 限时特惠 --
+                </div>
+                <div class="aui-card-list-footer">
+                    <div>
+                        <div class="aui-row amen">
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                               <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="aui-card-list">
+                <div class="aui-card-list-header">
+                    <img src="../../image/public/rushdetail/bj.jpg" alt="">
+                </div>
+                <div class="aui-card-list-content-padded">
+                    -- 特惠单品 --
+                </div>
+                <div class="aui-card-list-footer">
+                    <div>
+                        <div class="aui-row amen">
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                               <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="aui-card-list">
+                <div class="aui-card-list-header">
+                    <img src="../../image/public/rushdetail/bj.jpg" alt="">
+                </div>
+                <div class="aui-card-list-content-padded">
+                    -- 热销单品 --
+                </div>
+                <div class="aui-card-list-footer">
+                    <div>
+                        <div class="aui-row amen">
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                               <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                 <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                                <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                            <div class="aui-col-xs-4">
+                               <img src="../../image/public/rushdetail/5aaf87b6N9627e896.jpg" />
+                                <p>Estee Lauder/雅诗兰黛雅诗兰黛</p>
+                                <div><span>活动价</span> <a href="">￥520</a></div>
+                                <p>￥760</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</body>
+<script type="text/javascript" src="../../script/api.js" ></script>
+<script type="text/javascript" src="../../script/jquery.min.js"></script>
+</html>

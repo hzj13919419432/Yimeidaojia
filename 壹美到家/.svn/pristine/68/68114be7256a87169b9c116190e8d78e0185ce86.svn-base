@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>商学院文章</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/aui.css">
+    <link rel="stylesheet" href="../../css/yischool/courselist.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav aui-bar-light">
+        <a class="aui-pull-left aui-btn">
+            <span class="aui-iconfont aui-icon-left"></span>
+        </a>
+        <div class="aui-title">新人手册-捕手商学院</div>
+        <a class="aui-pull-right aui-btn">
+            <span class="aui-iconfont aui-icon-edit"></span>
+        </a>
+    </header>
+    <section class="aui-content">
+        <div class="aui-card-list">
+            <div class="aui-card-list-content">
+               <ul class="aui-list aui-media-list">
+                    <li class="aui-list-item aui-list-item-middle">
+                         <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-media">
+                                <img src="../../image/realauth/Desert.jpg" class="aui-list-img-sm">
+                            </div>
+                            <div class="aui-list-item-inner">
+                                 <div class="aui-list-item-text righh">新人学习班前言</div>
+                                <div class="aui-list-item-text  topp"><span>大咖风采</span></div>
+                                <div class="aui-list-item-text left">2018-11-10</div>
+                            </div>
+                       </div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-media">
+                                <img src="../../image/realauth/Desert.jpg" class="aui-list-img-sm">
+                            </div>
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text righh">1.了解壹美到家</div>
+                                 <div class="aui-list-item-text  topp"><span>捕手热点</span></div>
+                                <div class="aui-list-item-text left">2018-12-04</div>
+                            </div>
+                        </div>
+                   </li>
+                   <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-media">
+                                <img src="../../image/realauth/Desert.jpg" class="aui-list-img-sm">
+                            </div>
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text righh">2.了解壹美到家</div>
+                                 <div class="aui-list-item-text  topp"><span>捕手热点</span></div>
+                                <div class="aui-list-item-text left">2018-12-04</div>
+                            </div>
+                        </div>
+                   </li>
+                   <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-media">
+                                <img src="../../image/realauth/Desert.jpg" class="aui-list-img-sm">
+                            </div>
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text righh">3.了解壹美到家</div>
+                                 <div class="aui-list-item-text  topp"><span>捕手热点</span></div>
+                                <div class="aui-list-item-text left">2018-12-04</div>
+                            </div>
+                        </div>
+                   </li>
+                   <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-media">
+                                <img src="../../image/realauth/Desert.jpg" class="aui-list-img-sm">
+                            </div>
+                            <div class="aui-list-item-inner">
+                                <div class="aui-list-item-text righh">4.了解壹美到家</div>
+                                 <div class="aui-list-item-text  topp"><span>捕手热点</span></div>
+                                <div class="aui-list-item-text left">2018-12-04</div>
+                            </div>
+                        </div>
+                   </li>
+                </ul>
+            </div>
+            <div class="aui-card-list-footer aui-text-center">
+                查看更多
+            </div>
+        </div>
+    </section>
+</body>
+<script type="text/javascript" src="../../script/api.js"></script>
+</html>

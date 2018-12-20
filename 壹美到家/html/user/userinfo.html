@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+	<meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+	<link rel="stylesheet" type="text/css" href="../../css/aui.css">
+	<link rel="stylesheet" type="text/css" href="../../css/user/userinfo.css">
+	<title></title>
+</head>
+<header class="aui-bar aui-bar-nav">
+	<a class="aui-pull-left aui-btn" tapmode onclick="api.closeWin();">
+		<span class="aui-iconfont aui-icon-left"></span>
+	</a>
+	<div class="aui-title">个人资料</div>
+</header>
+<body class="aui-content">
+	<div>
+		<section class="aui-content">
+	        <ul class="aui-list aui-list-in">
+	            <li class="aui-list-item aui-list-item-middle">
+	                <div class="aui-list-item-inner aui-list-item-arrow">
+	                    头像<span id="logoBox"><img src="../../image/user/userinfo/ic_Avatar@3x.png" alt=""></span>
+	                </div>
+	            </li>
+	            <li class="aui-list-item" tapmode onclick="onNickName()">
+	                <div class="aui-list-item-inner aui-list-item-arrow">
+	                    昵称<span class="nicknameVal">暂无</span>
+	                </div>
+	            </li>
+							<li class="aui-list-item" tapmode onclick="onCellPhone()">
+	                <div class="aui-list-item-inner aui-list-item-arrow">
+	                    手机号<span class="phoneVal">暂无</span>
+	                </div>
+	            </li>
+	            <li class="aui-list-item" tapmode onclick="onAmend()">
+	                <div class="aui-list-item-inner aui-list-item-arrow">
+	                    微信号<span class="wechatVal">暂无</span>
+	                </div>
+	            </li>
+	            <li class="aui-list-item" tapmode onclick="onAutoGraph()">
+	                <div class="aui-list-item-inner aui-list-item-arrow">
+	                    个性签名<span class="remark">去设置</span>
+	                </div>
+	            </li>
+
+	        </ul>
+					<div class="aui-content-padded api">
+							<p class="btn">
+									<div class="aui-btn aui-btn-block info btncolor" id=""  tapmode onclick="quit()">退出</div>
+							</p>
+
+					</div>
+
+		</section>
+	</div>
+</body>
+<script type="text/javascript" src="../../script/api.js"></script>
+<script type="text/javascript" src="../../script/jquery.min.js"></script>
+<script type="text/javascript" src="../../promise/promise.js"></script>
+<script type="text/javascript" src="../../script/user/userinfo.js"></script>
+</html>

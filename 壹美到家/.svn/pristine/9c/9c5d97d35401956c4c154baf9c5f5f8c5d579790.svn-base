@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>商品分类</title>
+    <link rel="stylesheet" href="../../css/api.css">
+    <link rel="stylesheet" href="../../css/aui.css">
+    <link rel="stylesheet" href="../../css/public/rushdetail.css">
+    <link rel="stylesheet" type="text/css" href="../../css/aui-slide.css" />
+    <style> 
+       
+    </style>
+</head>
+<body>
+    <header class="aui-bar">
+        <div id="aui-slide">
+            <div class="aui-slide-wrap" >
+                <div class="aui-slide-node bg-dark">
+                    <img src="../../image/public/rushdetail/1.png" />
+                </div>
+                <div class="aui-slide-node bg-dark">
+                    <img src="../../image/public/rushdetail/2.png" />
+                </div>
+                <div class="aui-slide-node bg-dark">
+                    <img src="../../image/public/rushdetail/3.png" />
+                </div>
+            </div>
+            <div class="aui-slide-page-wrap"><!--分页容器--></div>
+        </div>
+        <div class="aui-row icon">
+            <a href="#">
+                <i class="aui-iconfont aui-icon-left"></i>
+            </a>
+            <a href="#">
+                <i class="aui-iconfont aui-icon-like"></i>
+            </a>
+            <a href="#">
+                <i class="aui-iconfont aui-icon-edit"></i>
+            </a>
+        </div>
+    </header>
+    <div class="aui-content">
+        <div class="aui-card-list dat">
+            <div class="aui-card-list-content-padded ">
+                <div class="aui-row">
+                    <div class="aui-col-xs-3">
+                        ￥279
+                    </div>
+                    <div class="aui-col-xs-4">
+                        <div>限时降价</div>
+                        <div class="itty">￥356.68</div>
+                    </div>
+                    <div class="aui-col-xs-5">
+                        距结束剩 11:08:03
+                    </div>
+                </div>
+            </div>
+            <div class="aui-list aui-select-list">
+                <div class="aui-list-item aui-font-size-6">推广赚22.32元</div>
+                <div class="aui-list-item aui-font-size-8">【王菲同款】 spa treatment 蛇毒眼膜红色升级版 60枚入</div>
+                <div class="aui-list-item  aui-font-size-4">保税区直邮，下单时需提供真实姓名和身份证号。</div>
+                <div  class="aui-list-item">
+                    <img src="../../image/public/rushdetail/5.png" alt="">
+                </div>
+            </div>
+            <div class="aui-content aui-margin-b-15">
+                <ul class="aui-list aui-media-list">
+                    <li class="aui-list-header"></li>
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-media" style="width: 3rem;">
+                                促销
+                            </div>
+                            <div class="aui-list-item-inner tant">
+                                秒杀-1119-20-spa眼膜，满279减35
+                            </div>
+                            <i class="aui-iconfont aui-icon-right"></i>
+                        </div>
+                    </li>
+                    <li class="aui-list-header"></li>
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-media" style="width: 3rem;">
+                                配送
+                            </div>
+                            <div class="aui-list-item-inner">
+                                杭州保税仓 至 黑龙江省哈尔滨市道里区
+                                <div class="midd">包邮</div>
+                            </div>
+                            <i class="aui-iconfont aui-icon-more"></i>
+                        </div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-media" style="width: 3rem;">
+                                说明 
+                            </div>
+                            <div class="aui-list-item-inner">
+                                花呗分期|海外直采|中国人寿保障|超时赔付
+                            </div>
+                            <i class="aui-iconfont aui-icon-more"></i>
+                        </div>
+                    </li>
+                    <li class="aui-list-item aui-list-item-middle">
+                        <div class="aui-media-list-item-inner">
+                            <div class="aui-list-item-media" style="width: 3rem;">
+                                服务
+                            </div>
+                            <div class="aui-list-item-inner">
+                                该商品会员购买可享就赔服务
+                            </div>
+                            <i class="aui-iconfont aui-icon-right"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <section>
+            <div class="aui-card-list">
+                <div class="aui">
+                    热门话题
+                </div>
+                <div class="foot">
+                    <div class="aui-card">
+                        <div class="deser">
+                            <img src="../../image/public/rushdetail/4.png" />
+                            <div>【绿公主/红参】</div>
+                            <div>韩国</div>
+                            <div><a href="#">￥139.2</a><span>￥145</span></div>
+                        </div>
+                        <div class="deser">
+                            <img src="../../image/public/rushdetail/3.png" />
+                            <div>【绿公主/红参】</div>
+                            <div>韩国</div>
+                            <div><a href="#">￥139.2</a><span>￥145</span></div>
+                        </div>
+                        <div class="deser">
+                            <img src="../../image/public/rushdetail/2.png" />
+                            <div>【绿公主/红参】</div>
+                            <div>韩国</div>
+                            <div><a href="#">￥139.2</a><span>￥145</span></div>
+                        </div>
+                        <div class="deser">
+                            <img src="../../image/public/rushdetail/1.png" />
+                            <div>【绿公主/红参】</div>
+                            <div>韩国</div>
+                            <div><a href="#">￥139.2</a><span>￥145</span></div>
+                        </div>
+                        <div class="deser">
+                            <img src="../../image/public/rushdetail/5.png" />
+                            <div>【绿公主/红参】</div>
+                            <div>韩国</div>
+                            <div><a href="#">￥139.2</a><span>￥145</span></div>
+                        </div>                  
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="aui-content">
+            <ul class="aui-list aui-media-list">
+                <li class="aui-list-header"></li>
+                <li class="aui-list-item aui-list-item-middle">
+                    <div class="aui-media-list-item-inner">
+                        <div class="aui-list-item-media" style="width: 6rem;color:black;">
+                            商品信息
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="aui-card-list bord">
+            <div class="aui-card-list-content">
+                <img src="../../image/public/rushdetail/1.png" />
+            </div>
+            <div class="aui-card-list-content">
+                <img src="../../image/public/rushdetail/1.png" />
+            </div>
+        </div>
+    </div>
+    <footer class="aui-bar aui-bar-tab" id="footer">
+        <div class="aui-row">
+            <div class=" aui-active aui-col-xs-2" tapmode>
+                <div class="aui-badge">88</div>
+                <i class="aui-iconfont aui-icon-cart"></i>
+                <div class="aui-grid-label">购物袋</div>
+            </div>
+            <div class=" aui-col-xs-2" tapmode>
+                <div class="aui-badge">0</div>
+                <i class="aui-iconfont aui-icon-comment"></i>
+                <div class="aui-grid-label">客服</div>
+            </div>
+            <div class=" aui-col-xs-4"  style="background-color:#000" tapmode>
+                <a href="#">加入购物袋</a>
+            </div>
+            <div class=" aui-col-xs-4"  style="background-color:red" tapmode>
+                <a href="#">立即购买</a>
+            </div>
+        </div>    
+    </footer>
+    <script type="text/javascript" src="../../script/aui-slide.js"></script>
+    <script type="text/javascript">
+        var slide = new auiSlide({
+            container:document.getElementById("aui-slide"),
+            // "width":300,
+            "height":200,
+            "speed":300,
+            "pageShow":true,
+            "pageStyle":'dot',
+            "loop":true,
+            'dotPosition':'center',
+            currentPage:currentFun
+        })
+
+        function currentFun(index) {
+            console.log(index);
+        }
+    </script>
+    <script type="text/javascript" src="../../script/api.js"></script>
+</body>
+</html>
